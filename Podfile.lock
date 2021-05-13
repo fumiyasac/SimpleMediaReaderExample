@@ -1,0 +1,50 @@
+PODS:
+  - ActiveLabel (1.1.0)
+  - Alamofire (5.4.3)
+  - AlamofireImage (4.2.0):
+    - Alamofire (~> 5.4)
+  - GRDB.swift (5.7.4):
+    - GRDB.swift/standard (= 5.7.4)
+  - GRDB.swift/standard (5.7.4)
+  - KeychainAccess (4.2.2)
+  - SkeletonView (1.15.0)
+  - SwiftyAttributes (5.1.1)
+  - SwiftyUserDefaults (5.3.0)
+  - Toast-Swift (5.0.1)
+
+DEPENDENCIES:
+  - ActiveLabel
+  - AlamofireImage
+  - GRDB.swift
+  - KeychainAccess
+  - SkeletonView
+  - SwiftyAttributes
+  - SwiftyUserDefaults (~> 5.0)
+  - Toast-Swift (~> 5.0.1)
+
+SPEC REPOS:
+  trunk:
+    - ActiveLabel
+    - Alamofire
+    - AlamofireImage
+    - GRDB.swift
+    - KeychainAccess
+    - SkeletonView
+    - SwiftyAttributes
+    - SwiftyUserDefaults
+    - Toast-Swift
+
+SPEC CHECKSUMS:
+  ActiveLabel: 5e3f4de79a1952d4604b845a0610d4776e4b82b3
+  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
+  AlamofireImage: 34a2d90b0e5fe6a5605f85ae4b7b01e784c60192
+  GRDB.swift: 2064e726141f130d0b8bd819b29086f2b1157597
+  KeychainAccess: c0c4f7f38f6fc7bbe58f5702e25f7bd2f65abf51
+  SkeletonView: cac18a3ac4f893b09d99e65072d806ef08377aae
+  SwiftyAttributes: e3e13891ddac3c62b3d7798d5c3969cea88e62bb
+  SwiftyUserDefaults: 63f80248cf5bfb3458825d9a78f2eb7e1293a040
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
+
+PODFILE CHECKSUM: 94e429e42929444414703bb5c357f1225d322fbb
+
+COCOAPODS: 1.10.1
