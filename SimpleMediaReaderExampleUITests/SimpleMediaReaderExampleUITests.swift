@@ -1,13 +1,13 @@
 //
-//  SimpleMediaReaderExampleSwiftUIUITests.swift
-//  SimpleMediaReaderExampleSwiftUIUITests
+//  SimpleMediaReaderExampleUITests.swift
+//  SimpleMediaReaderExampleUITests
 //
-//  Created by 酒井文也 on 2021/10/02.
+//  Created by 酒井文也 on 2022/12/30.
 //
 
 import XCTest
 
-class SimpleMediaReaderExampleSwiftUIUITests: XCTestCase {
+final class SimpleMediaReaderExampleUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -27,7 +27,6 @@ class SimpleMediaReaderExampleSwiftUIUITests: XCTestCase {
         let app = XCUIApplication()
         app.launch()
 
-        // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
 

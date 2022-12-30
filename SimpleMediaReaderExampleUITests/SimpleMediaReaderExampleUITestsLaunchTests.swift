@@ -1,13 +1,13 @@
 //
-//  SimpleMediaReaderExampleSwiftUIUITestsLaunchTests.swift
-//  SimpleMediaReaderExampleSwiftUIUITests
+//  SimpleMediaReaderExampleUITestsLaunchTests.swift
+//  SimpleMediaReaderExampleUITests
 //
-//  Created by 酒井文也 on 2021/10/02.
+//  Created by 酒井文也 on 2022/12/30.
 //
 
 import XCTest
 
-class SimpleMediaReaderExampleSwiftUIUITestsLaunchTests: XCTestCase {
+final class SimpleMediaReaderExampleUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
