@@ -16,6 +16,7 @@
 		DE03CFD7295EC7CA0054BCF1 /* SimpleMediaReaderExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE03CFD6295EC7CA0054BCF1 /* SimpleMediaReaderExampleUITestsLaunchTests.swift */; };
 		DE03CFEB296014C90054BCF1 /* DetailSampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE03CFEA296014C90054BCF1 /* DetailSampleView.swift */; };
 		DE03D011296684A00054BCF1 /* DetailArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE03D010296684A00054BCF1 /* DetailArticleView.swift */; };
+		DEAACE972976E75D00F436F5 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = DEAACE962976E75D00F436F5 /* ComposableArchitecture */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEAACE972976E75D00F436F5 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +151,9 @@
 			dependencies = (
 			);
 			name = SimpleMediaReaderExample;
+			packageProductDependencies = (
+				DEAACE962976E75D00F436F5 /* ComposableArchitecture */,
+			);
 			productName = SimpleMediaReaderExample;
 			productReference = DE03CFB6295EC7C90054BCF1 /* SimpleMediaReaderExample.app */;
 			productType = "com.apple.product-type.application";
@@ -221,6 +226,9 @@
 				Base,
 			);
 			mainGroup = DE03CFAD295EC7C90054BCF1;
+			packageReferences = (
+				DEAACE952976E75D00F436F5 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = DE03CFB7295EC7C90054BCF1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -591,6 +599,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DEAACE952976E75D00F436F5 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DEAACE962976E75D00F436F5 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DEAACE952976E75D00F436F5 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DE03CFAE295EC7C90054BCF1 /* Project object */;
 }
