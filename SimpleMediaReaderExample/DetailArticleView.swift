@@ -11,7 +11,12 @@ import SwiftUI
 
 struct DetailArticleView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+
+        Group {
+            ScrollView {
+                Text("DetailArticleViewから移植する")
+            }
+        }
     }
 }
 
