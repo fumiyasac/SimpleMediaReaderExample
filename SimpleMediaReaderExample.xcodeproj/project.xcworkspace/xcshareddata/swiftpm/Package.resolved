@@ -1,12 +1,30 @@
 {
   "pins" : [
     {
+      "identity" : "collectionviewpaginglayout",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/amirdew/CollectionViewPagingLayout.git",
+      "state" : {
+        "revision" : "4bdec327535470c8d9765d190625b13e99b87db5",
+        "version" : "1.1.0"
+      }
+    },
+    {
       "identity" : "combine-schedulers",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/pointfreeco/combine-schedulers",
       "state" : {
         "revision" : "882ac01eb7ef9e36d4467eb4b1151e74fcef85ab",
         "version" : "0.9.1"
+      }
+    },
+    {
+      "identity" : "parchment",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/rechsteiner/Parchment.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "13aad3e9308e8a4e38cb579430dbf66465418777"
       }
     },
     {

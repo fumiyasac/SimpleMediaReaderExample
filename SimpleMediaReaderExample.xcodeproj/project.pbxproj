@@ -17,6 +17,8 @@
 		DE03CFEB296014C90054BCF1 /* DetailSampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE03CFEA296014C90054BCF1 /* DetailSampleView.swift */; };
 		DE03D011296684A00054BCF1 /* DetailArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE03D010296684A00054BCF1 /* DetailArticleView.swift */; };
 		DEAACE972976E75D00F436F5 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = DEAACE962976E75D00F436F5 /* ComposableArchitecture */; };
+		DEEAC1A629FCF09400BCA5C9 /* Parchment in Frameworks */ = {isa = PBXBuildFile; productRef = DEEAC1A529FCF09400BCA5C9 /* Parchment */; };
+		DEEAC1A929FCF0BA00BCA5C9 /* CollectionViewPagingLayout in Frameworks */ = {isa = PBXBuildFile; productRef = DEEAC1A829FCF0BA00BCA5C9 /* CollectionViewPagingLayout */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEAACE972976E75D00F436F5 /* ComposableArchitecture in Frameworks */,
+				DEEAC1A629FCF09400BCA5C9 /* Parchment in Frameworks */,
+				DEEAC1A929FCF0BA00BCA5C9 /* CollectionViewPagingLayout in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +157,8 @@
 			name = SimpleMediaReaderExample;
 			packageProductDependencies = (
 				DEAACE962976E75D00F436F5 /* ComposableArchitecture */,
+				DEEAC1A529FCF09400BCA5C9 /* Parchment */,
+				DEEAC1A829FCF0BA00BCA5C9 /* CollectionViewPagingLayout */,
 			);
 			productName = SimpleMediaReaderExample;
 			productReference = DE03CFB6295EC7C90054BCF1 /* SimpleMediaReaderExample.app */;
@@ -228,6 +234,8 @@
 			mainGroup = DE03CFAD295EC7C90054BCF1;
 			packageReferences = (
 				DEAACE952976E75D00F436F5 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				DEEAC1A429FCF09400BCA5C9 /* XCRemoteSwiftPackageReference "Parchment" */,
+				DEEAC1A729FCF0BA00BCA5C9 /* XCRemoteSwiftPackageReference "CollectionViewPagingLayout" */,
 			);
 			productRefGroup = DE03CFB7295EC7C90054BCF1 /* Products */;
 			projectDirPath = "";
@@ -441,6 +449,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -470,6 +479,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -609,6 +619,22 @@
 				kind = branch;
 			};
 		};
+		DEEAC1A429FCF09400BCA5C9 /* XCRemoteSwiftPackageReference "Parchment" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rechsteiner/Parchment.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		DEEAC1A729FCF0BA00BCA5C9 /* XCRemoteSwiftPackageReference "CollectionViewPagingLayout" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/amirdew/CollectionViewPagingLayout.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -616,6 +642,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = DEAACE952976E75D00F436F5 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
 			productName = ComposableArchitecture;
+		};
+		DEEAC1A529FCF09400BCA5C9 /* Parchment */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DEEAC1A429FCF09400BCA5C9 /* XCRemoteSwiftPackageReference "Parchment" */;
+			productName = Parchment;
+		};
+		DEEAC1A829FCF0BA00BCA5C9 /* CollectionViewPagingLayout */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DEEAC1A729FCF0BA00BCA5C9 /* XCRemoteSwiftPackageReference "CollectionViewPagingLayout" */;
+			productName = CollectionViewPagingLayout;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
