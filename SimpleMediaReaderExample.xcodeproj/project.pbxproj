@@ -19,6 +19,9 @@
 		DEAACE972976E75D00F436F5 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = DEAACE962976E75D00F436F5 /* ComposableArchitecture */; };
 		DEEAC1A629FCF09400BCA5C9 /* Parchment in Frameworks */ = {isa = PBXBuildFile; productRef = DEEAC1A529FCF09400BCA5C9 /* Parchment */; };
 		DEEAC1A929FCF0BA00BCA5C9 /* CollectionViewPagingLayout in Frameworks */ = {isa = PBXBuildFile; productRef = DEEAC1A829FCF0BA00BCA5C9 /* CollectionViewPagingLayout */; };
+		DEEAC1AC29FCFBAA00BCA5C9 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = DEEAC1AB29FCFBAA00BCA5C9 /* KeychainAccess */; };
+		DEEAC1AF29FCFC3D00BCA5C9 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = DEEAC1AE29FCFC3D00BCA5C9 /* Realm */; };
+		DEEAC1B129FCFC3D00BCA5C9 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DEEAC1B029FCFC3D00BCA5C9 /* RealmSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,9 +61,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEEAC1B129FCFC3D00BCA5C9 /* RealmSwift in Frameworks */,
+				DEEAC1AC29FCFBAA00BCA5C9 /* KeychainAccess in Frameworks */,
 				DEAACE972976E75D00F436F5 /* ComposableArchitecture in Frameworks */,
 				DEEAC1A629FCF09400BCA5C9 /* Parchment in Frameworks */,
 				DEEAC1A929FCF0BA00BCA5C9 /* CollectionViewPagingLayout in Frameworks */,
+				DEEAC1AF29FCFC3D00BCA5C9 /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,6 +165,9 @@
 				DEAACE962976E75D00F436F5 /* ComposableArchitecture */,
 				DEEAC1A529FCF09400BCA5C9 /* Parchment */,
 				DEEAC1A829FCF0BA00BCA5C9 /* CollectionViewPagingLayout */,
+				DEEAC1AB29FCFBAA00BCA5C9 /* KeychainAccess */,
+				DEEAC1AE29FCFC3D00BCA5C9 /* Realm */,
+				DEEAC1B029FCFC3D00BCA5C9 /* RealmSwift */,
 			);
 			productName = SimpleMediaReaderExample;
 			productReference = DE03CFB6295EC7C90054BCF1 /* SimpleMediaReaderExample.app */;
@@ -236,6 +245,8 @@
 				DEAACE952976E75D00F436F5 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
 				DEEAC1A429FCF09400BCA5C9 /* XCRemoteSwiftPackageReference "Parchment" */,
 				DEEAC1A729FCF0BA00BCA5C9 /* XCRemoteSwiftPackageReference "CollectionViewPagingLayout" */,
+				DEEAC1AA29FCFBAA00BCA5C9 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+				DEEAC1AD29FCFC3D00BCA5C9 /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = DE03CFB7295EC7C90054BCF1 /* Products */;
 			projectDirPath = "";
@@ -633,6 +644,22 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		DEEAC1AA29FCFBAA00BCA5C9 /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		DEEAC1AD29FCFC3D00BCA5C9 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -650,6 +677,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = DEEAC1A729FCF0BA00BCA5C9 /* XCRemoteSwiftPackageReference "CollectionViewPagingLayout" */;
 			productName = CollectionViewPagingLayout;
+		};
+		DEEAC1AB29FCFBAA00BCA5C9 /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DEEAC1AA29FCFBAA00BCA5C9 /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
+		DEEAC1AE29FCFC3D00BCA5C9 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DEEAC1AD29FCFC3D00BCA5C9 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		DEEAC1B029FCFC3D00BCA5C9 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DEEAC1AD29FCFC3D00BCA5C9 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

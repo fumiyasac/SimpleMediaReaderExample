@@ -19,12 +19,39 @@
       }
     },
     {
+      "identity" : "keychainaccess",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kishikawakatsumi/KeychainAccess.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "ecb18d8ce4d88277cc4fb103973352d91e18c535"
+      }
+    },
+    {
       "identity" : "parchment",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/rechsteiner/Parchment.git",
       "state" : {
         "branch" : "main",
         "revision" : "13aad3e9308e8a4e38cb579430dbf66465418777"
+      }
+    },
+    {
+      "identity" : "realm-core",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/realm/realm-core.git",
+      "state" : {
+        "revision" : "f0045b71f9d3e9a6d82c711828f14222811fa6e9",
+        "version" : "13.9.4"
+      }
+    },
+    {
+      "identity" : "realm-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/realm/realm-swift.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "00e098a61acdf5e8cee4e2a6292c9ec6762ba1b4"
       }
     },
     {
