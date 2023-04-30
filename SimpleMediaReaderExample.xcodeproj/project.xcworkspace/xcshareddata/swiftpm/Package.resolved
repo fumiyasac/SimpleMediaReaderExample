@@ -28,15 +28,6 @@
       }
     },
     {
-      "identity" : "parchment",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/rechsteiner/Parchment.git",
-      "state" : {
-        "branch" : "main",
-        "revision" : "13aad3e9308e8a4e38cb579430dbf66465418777"
-      }
-    },
-    {
       "identity" : "realm-core",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/realm/realm-core.git",

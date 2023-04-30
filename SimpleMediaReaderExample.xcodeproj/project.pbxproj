@@ -17,7 +17,6 @@
 		DE03CFEB296014C90054BCF1 /* DetailSampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE03CFEA296014C90054BCF1 /* DetailSampleView.swift */; };
 		DE03D011296684A00054BCF1 /* DetailArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE03D010296684A00054BCF1 /* DetailArticleView.swift */; };
 		DEAACE972976E75D00F436F5 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = DEAACE962976E75D00F436F5 /* ComposableArchitecture */; };
-		DEEAC1A629FCF09400BCA5C9 /* Parchment in Frameworks */ = {isa = PBXBuildFile; productRef = DEEAC1A529FCF09400BCA5C9 /* Parchment */; };
 		DEEAC1A929FCF0BA00BCA5C9 /* CollectionViewPagingLayout in Frameworks */ = {isa = PBXBuildFile; productRef = DEEAC1A829FCF0BA00BCA5C9 /* CollectionViewPagingLayout */; };
 		DEEAC1AC29FCFBAA00BCA5C9 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = DEEAC1AB29FCFBAA00BCA5C9 /* KeychainAccess */; };
 		DEEAC1AF29FCFC3D00BCA5C9 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = DEEAC1AE29FCFC3D00BCA5C9 /* Realm */; };
@@ -64,7 +63,6 @@
 				DEEAC1B129FCFC3D00BCA5C9 /* RealmSwift in Frameworks */,
 				DEEAC1AC29FCFBAA00BCA5C9 /* KeychainAccess in Frameworks */,
 				DEAACE972976E75D00F436F5 /* ComposableArchitecture in Frameworks */,
-				DEEAC1A629FCF09400BCA5C9 /* Parchment in Frameworks */,
 				DEEAC1A929FCF0BA00BCA5C9 /* CollectionViewPagingLayout in Frameworks */,
 				DEEAC1AF29FCFC3D00BCA5C9 /* Realm in Frameworks */,
 			);
@@ -163,7 +161,6 @@
 			name = SimpleMediaReaderExample;
 			packageProductDependencies = (
 				DEAACE962976E75D00F436F5 /* ComposableArchitecture */,
-				DEEAC1A529FCF09400BCA5C9 /* Parchment */,
 				DEEAC1A829FCF0BA00BCA5C9 /* CollectionViewPagingLayout */,
 				DEEAC1AB29FCFBAA00BCA5C9 /* KeychainAccess */,
 				DEEAC1AE29FCFC3D00BCA5C9 /* Realm */,
@@ -243,7 +240,6 @@
 			mainGroup = DE03CFAD295EC7C90054BCF1;
 			packageReferences = (
 				DEAACE952976E75D00F436F5 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
-				DEEAC1A429FCF09400BCA5C9 /* XCRemoteSwiftPackageReference "Parchment" */,
 				DEEAC1A729FCF0BA00BCA5C9 /* XCRemoteSwiftPackageReference "CollectionViewPagingLayout" */,
 				DEEAC1AA29FCFBAA00BCA5C9 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
 				DEEAC1AD29FCFC3D00BCA5C9 /* XCRemoteSwiftPackageReference "realm-swift" */,
@@ -628,14 +624,6 @@
 				kind = branch;
 			};
 		};
-		DEEAC1A429FCF09400BCA5C9 /* XCRemoteSwiftPackageReference "Parchment" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/rechsteiner/Parchment.git";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
 		DEEAC1A729FCF0BA00BCA5C9 /* XCRemoteSwiftPackageReference "CollectionViewPagingLayout" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/amirdew/CollectionViewPagingLayout.git";
@@ -667,11 +655,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = DEAACE952976E75D00F436F5 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
 			productName = ComposableArchitecture;
-		};
-		DEEAC1A529FCF09400BCA5C9 /* Parchment */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DEEAC1A429FCF09400BCA5C9 /* XCRemoteSwiftPackageReference "Parchment" */;
-			productName = Parchment;
 		};
 		DEEAC1A829FCF0BA00BCA5C9 /* CollectionViewPagingLayout */ = {
 			isa = XCSwiftPackageProductDependency;
