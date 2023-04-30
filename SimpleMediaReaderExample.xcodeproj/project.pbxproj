@@ -21,6 +21,8 @@
 		DEEAC1AC29FCFBAA00BCA5C9 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = DEEAC1AB29FCFBAA00BCA5C9 /* KeychainAccess */; };
 		DEEAC1AF29FCFC3D00BCA5C9 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = DEEAC1AE29FCFC3D00BCA5C9 /* Realm */; };
 		DEEAC1B129FCFC3D00BCA5C9 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DEEAC1B029FCFC3D00BCA5C9 /* RealmSwift */; };
+		DEEAC1B929FE583400BCA5C9 /* InfiniteCarouselScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEEAC1B829FE583400BCA5C9 /* InfiniteCarouselScreen.storyboard */; };
+		DEEAC1BB29FE584800BCA5C9 /* InfiniteCarouselScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEAC1BA29FE584800BCA5C9 /* InfiniteCarouselScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		DE03CFD6295EC7CA0054BCF1 /* SimpleMediaReaderExampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleMediaReaderExampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		DE03CFEA296014C90054BCF1 /* DetailSampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSampleView.swift; sourceTree = "<group>"; };
 		DE03D010296684A00054BCF1 /* DetailArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailArticleView.swift; sourceTree = "<group>"; };
+		DEEAC1B829FE583400BCA5C9 /* InfiniteCarouselScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InfiniteCarouselScreen.storyboard; sourceTree = "<group>"; };
+		DEEAC1BA29FE584800BCA5C9 /* InfiniteCarouselScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteCarouselScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +118,8 @@
 				DE03CFEA296014C90054BCF1 /* DetailSampleView.swift */,
 				DE03CFBD295EC7C90054BCF1 /* Assets.xcassets */,
 				DE03CFBF295EC7C90054BCF1 /* Preview Content */,
+				DEEAC1B829FE583400BCA5C9 /* InfiniteCarouselScreen.storyboard */,
+				DEEAC1BA29FE584800BCA5C9 /* InfiniteCarouselScreenViewController.swift */,
 			);
 			path = SimpleMediaReaderExample;
 			sourceTree = "<group>";
@@ -262,6 +268,7 @@
 			files = (
 				DE03CFC1295EC7C90054BCF1 /* Preview Assets.xcassets in Resources */,
 				DE03CFBE295EC7C90054BCF1 /* Assets.xcassets in Resources */,
+				DEEAC1B929FE583400BCA5C9 /* InfiniteCarouselScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE03D011296684A00054BCF1 /* DetailArticleView.swift in Sources */,
+				DEEAC1BB29FE584800BCA5C9 /* InfiniteCarouselScreenViewController.swift in Sources */,
 				DE03CFEB296014C90054BCF1 /* DetailSampleView.swift in Sources */,
 				DE03CFBC295EC7C90054BCF1 /* ContentView.swift in Sources */,
 				DE03CFBA295EC7C90054BCF1 /* SimpleMediaReaderExampleApp.swift in Sources */,
