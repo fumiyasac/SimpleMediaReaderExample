@@ -23,6 +23,7 @@
 		DEEAC1B129FCFC3D00BCA5C9 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DEEAC1B029FCFC3D00BCA5C9 /* RealmSwift */; };
 		DEEAC1B929FE583400BCA5C9 /* InfiniteCarouselScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEEAC1B829FE583400BCA5C9 /* InfiniteCarouselScreen.storyboard */; };
 		DEEAC1BB29FE584800BCA5C9 /* InfiniteCarouselScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEAC1BA29FE584800BCA5C9 /* InfiniteCarouselScreenViewController.swift */; };
+		DEEAC1D72A0120E200BCA5C9 /* CustomViewBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEAC1D62A0120E200BCA5C9 /* CustomViewBase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		DE03D010296684A00054BCF1 /* DetailArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailArticleView.swift; sourceTree = "<group>"; };
 		DEEAC1B829FE583400BCA5C9 /* InfiniteCarouselScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InfiniteCarouselScreen.storyboard; sourceTree = "<group>"; };
 		DEEAC1BA29FE584800BCA5C9 /* InfiniteCarouselScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteCarouselScreenViewController.swift; sourceTree = "<group>"; };
+		DEEAC1D62A0120E200BCA5C9 /* CustomViewBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewBase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 		DE03CFB8295EC7C90054BCF1 /* SimpleMediaReaderExample */ = {
 			isa = PBXGroup;
 			children = (
+				DEEAC1D52A0120A700BCA5C9 /* ViewBase */,
 				DEEAC1D22A011FC800BCA5C9 /* Screen */,
 				DE03CFB9295EC7C90054BCF1 /* SimpleMediaReaderExampleApp.swift */,
 				DE03CFBB295EC7C90054BCF1 /* ContentView.swift */,
@@ -151,10 +154,34 @@
 		DEEAC1D22A011FC800BCA5C9 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				DEEAC1D32A01206300BCA5C9 /* InfiniteCarouselScreen */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		DEEAC1D32A01206300BCA5C9 /* InfiniteCarouselScreen */ = {
+			isa = PBXGroup;
+			children = (
+				DEEAC1D42A01207700BCA5C9 /* View */,
 				DEEAC1B829FE583400BCA5C9 /* InfiniteCarouselScreen.storyboard */,
 				DEEAC1BA29FE584800BCA5C9 /* InfiniteCarouselScreenViewController.swift */,
 			);
-			path = Screen;
+			path = InfiniteCarouselScreen;
+			sourceTree = "<group>";
+		};
+		DEEAC1D42A01207700BCA5C9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DEEAC1D52A0120A700BCA5C9 /* ViewBase */ = {
+			isa = PBXGroup;
+			children = (
+				DEEAC1D62A0120E200BCA5C9 /* CustomViewBase.swift */,
+			);
+			path = ViewBase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,6 +332,7 @@
 				DEEAC1BB29FE584800BCA5C9 /* InfiniteCarouselScreenViewController.swift in Sources */,
 				DE03CFEB296014C90054BCF1 /* DetailSampleView.swift in Sources */,
 				DE03CFBC295EC7C90054BCF1 /* ContentView.swift in Sources */,
+				DEEAC1D72A0120E200BCA5C9 /* CustomViewBase.swift in Sources */,
 				DE03CFBA295EC7C90054BCF1 /* SimpleMediaReaderExampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
