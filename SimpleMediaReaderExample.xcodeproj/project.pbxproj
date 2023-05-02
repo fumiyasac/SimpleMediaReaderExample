@@ -24,6 +24,9 @@
 		DEEAC1B929FE583400BCA5C9 /* InfiniteCarouselScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEEAC1B829FE583400BCA5C9 /* InfiniteCarouselScreen.storyboard */; };
 		DEEAC1BB29FE584800BCA5C9 /* InfiniteCarouselScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEAC1BA29FE584800BCA5C9 /* InfiniteCarouselScreenViewController.swift */; };
 		DEEAC1D72A0120E200BCA5C9 /* CustomViewBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEAC1D62A0120E200BCA5C9 /* CustomViewBase.swift */; };
+		DEEAC1D92A01219300BCA5C9 /* CategoryScrollTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEAC1D82A01219300BCA5C9 /* CategoryScrollTabViewController.swift */; };
+		DEEAC1DD2A0121F800BCA5C9 /* CategoryScrollTabViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEAC1DB2A0121F800BCA5C9 /* CategoryScrollTabViewCell.swift */; };
+		DEEAC1DE2A0121F800BCA5C9 /* CategoryScrollTabViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEEAC1DC2A0121F800BCA5C9 /* CategoryScrollTabViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,9 @@
 		DEEAC1B829FE583400BCA5C9 /* InfiniteCarouselScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InfiniteCarouselScreen.storyboard; sourceTree = "<group>"; };
 		DEEAC1BA29FE584800BCA5C9 /* InfiniteCarouselScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteCarouselScreenViewController.swift; sourceTree = "<group>"; };
 		DEEAC1D62A0120E200BCA5C9 /* CustomViewBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewBase.swift; sourceTree = "<group>"; };
+		DEEAC1D82A01219300BCA5C9 /* CategoryScrollTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryScrollTabViewController.swift; sourceTree = "<group>"; };
+		DEEAC1DB2A0121F800BCA5C9 /* CategoryScrollTabViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryScrollTabViewCell.swift; sourceTree = "<group>"; };
+		DEEAC1DC2A0121F800BCA5C9 /* CategoryScrollTabViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryScrollTabViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,18 +168,20 @@
 		DEEAC1D32A01206300BCA5C9 /* InfiniteCarouselScreen */ = {
 			isa = PBXGroup;
 			children = (
-				DEEAC1D42A01207700BCA5C9 /* View */,
+				DEEAC1D42A01207700BCA5C9 /* ViewParts */,
 				DEEAC1B829FE583400BCA5C9 /* InfiniteCarouselScreen.storyboard */,
 				DEEAC1BA29FE584800BCA5C9 /* InfiniteCarouselScreenViewController.swift */,
+				DEEAC1D82A01219300BCA5C9 /* CategoryScrollTabViewController.swift */,
 			);
 			path = InfiniteCarouselScreen;
 			sourceTree = "<group>";
 		};
-		DEEAC1D42A01207700BCA5C9 /* View */ = {
+		DEEAC1D42A01207700BCA5C9 /* ViewParts */ = {
 			isa = PBXGroup;
 			children = (
+				DEEAC1DA2A0121D600BCA5C9 /* CategoryScrollTabViewCell */,
 			);
-			path = View;
+			path = ViewParts;
 			sourceTree = "<group>";
 		};
 		DEEAC1D52A0120A700BCA5C9 /* ViewBase */ = {
@@ -182,6 +190,15 @@
 				DEEAC1D62A0120E200BCA5C9 /* CustomViewBase.swift */,
 			);
 			path = ViewBase;
+			sourceTree = "<group>";
+		};
+		DEEAC1DA2A0121D600BCA5C9 /* CategoryScrollTabViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				DEEAC1DB2A0121F800BCA5C9 /* CategoryScrollTabViewCell.swift */,
+				DEEAC1DC2A0121F800BCA5C9 /* CategoryScrollTabViewCell.xib */,
+			);
+			path = CategoryScrollTabViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,6 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE03CFC1295EC7C90054BCF1 /* Preview Assets.xcassets in Resources */,
+				DEEAC1DE2A0121F800BCA5C9 /* CategoryScrollTabViewCell.xib in Resources */,
 				DE03CFBE295EC7C90054BCF1 /* Assets.xcassets in Resources */,
 				DEEAC1B929FE583400BCA5C9 /* InfiniteCarouselScreen.storyboard in Resources */,
 			);
@@ -329,6 +347,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE03D011296684A00054BCF1 /* DetailArticleView.swift in Sources */,
+				DEEAC1DD2A0121F800BCA5C9 /* CategoryScrollTabViewCell.swift in Sources */,
+				DEEAC1D92A01219300BCA5C9 /* CategoryScrollTabViewController.swift in Sources */,
 				DEEAC1BB29FE584800BCA5C9 /* InfiniteCarouselScreenViewController.swift in Sources */,
 				DE03CFEB296014C90054BCF1 /* DetailSampleView.swift in Sources */,
 				DE03CFBC295EC7C90054BCF1 /* ContentView.swift in Sources */,
