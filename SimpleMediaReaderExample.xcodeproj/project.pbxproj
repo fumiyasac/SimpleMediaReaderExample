@@ -112,14 +112,13 @@
 		DE03CFB8295EC7C90054BCF1 /* SimpleMediaReaderExample */ = {
 			isa = PBXGroup;
 			children = (
+				DEEAC1D22A011FC800BCA5C9 /* Screen */,
 				DE03CFB9295EC7C90054BCF1 /* SimpleMediaReaderExampleApp.swift */,
 				DE03CFBB295EC7C90054BCF1 /* ContentView.swift */,
 				DE03D010296684A00054BCF1 /* DetailArticleView.swift */,
 				DE03CFEA296014C90054BCF1 /* DetailSampleView.swift */,
 				DE03CFBD295EC7C90054BCF1 /* Assets.xcassets */,
 				DE03CFBF295EC7C90054BCF1 /* Preview Content */,
-				DEEAC1B829FE583400BCA5C9 /* InfiniteCarouselScreen.storyboard */,
-				DEEAC1BA29FE584800BCA5C9 /* InfiniteCarouselScreenViewController.swift */,
 			);
 			path = SimpleMediaReaderExample;
 			sourceTree = "<group>";
@@ -147,6 +146,15 @@
 				DE03CFD6295EC7CA0054BCF1 /* SimpleMediaReaderExampleUITestsLaunchTests.swift */,
 			);
 			path = SimpleMediaReaderExampleUITests;
+			sourceTree = "<group>";
+		};
+		DEEAC1D22A011FC800BCA5C9 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				DEEAC1B829FE583400BCA5C9 /* InfiniteCarouselScreen.storyboard */,
+				DEEAC1BA29FE584800BCA5C9 /* InfiniteCarouselScreenViewController.swift */,
+			);
+			path = Screen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
