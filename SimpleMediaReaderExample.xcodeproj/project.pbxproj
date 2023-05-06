@@ -134,11 +134,12 @@
 		DE03CFB8295EC7C90054BCF1 /* SimpleMediaReaderExample */ = {
 			isa = PBXGroup;
 			children = (
+				DE03CFB9295EC7C90054BCF1 /* SimpleMediaReaderExampleApp.swift */,
+				DE03CFBB295EC7C90054BCF1 /* ContentView.swift */,
+				DEEAC1FD2A06606800BCA5C9 /* Domain */,
 				DEEAC1D52A0120A700BCA5C9 /* ViewBase */,
 				DEEAC1D22A011FC800BCA5C9 /* Screen */,
-				DE03CFB9295EC7C90054BCF1 /* SimpleMediaReaderExampleApp.swift */,
-				DE03D010296684A00054BCF1 /* DetailArticleView.swift */,
-				DE03CFEA296014C90054BCF1 /* DetailSampleView.swift */,
+				DEEAC1FE2A06609D00BCA5C9 /* _Temporary */,
 				DE03CFBD295EC7C90054BCF1 /* Assets.xcassets */,
 				DE03CFBF295EC7C90054BCF1 /* Preview Content */,
 			);
@@ -174,8 +175,8 @@
 			isa = PBXGroup;
 			children = (
 				DEEAC1F42A052A1000BCA5C9 /* ProfileScreen */,
-				DE03CFBB295EC7C90054BCF1 /* ContentView.swift */,
 				DEEAC1DF2A02504800BCA5C9 /* ArticleListScreen */,
+				DEEAC1FF2A0660C300BCA5C9 /* ArticleDetailScreen */,
 				DEEAC1E62A02534500BCA5C9 /* FeaturedListScreen */,
 				DEEAC1EC2A03F6CD00BCA5C9 /* FeaturedDetailScreen */,
 				DEEAC1E72A02535E00BCA5C9 /* GalleryListScreen */,
@@ -276,6 +277,53 @@
 			children = (
 			);
 			path = ViewParts;
+			sourceTree = "<group>";
+		};
+		DEEAC1FA2A06604700BCA5C9 /* InfraStructure */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = InfraStructure;
+			sourceTree = "<group>";
+		};
+		DEEAC1FB2A06605900BCA5C9 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		DEEAC1FC2A06606000BCA5C9 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		DEEAC1FD2A06606800BCA5C9 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				DEEAC1FA2A06604700BCA5C9 /* InfraStructure */,
+				DEEAC1FB2A06605900BCA5C9 /* Repository */,
+				DEEAC1FC2A06606000BCA5C9 /* UseCase */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		DEEAC1FE2A06609D00BCA5C9 /* _Temporary */ = {
+			isa = PBXGroup;
+			children = (
+				DE03D010296684A00054BCF1 /* DetailArticleView.swift */,
+				DE03CFEA296014C90054BCF1 /* DetailSampleView.swift */,
+			);
+			path = _Temporary;
+			sourceTree = "<group>";
+		};
+		DEEAC1FF2A0660C300BCA5C9 /* ArticleDetailScreen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ArticleDetailScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
