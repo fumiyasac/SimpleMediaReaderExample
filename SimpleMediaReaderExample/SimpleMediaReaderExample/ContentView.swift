@@ -1,8 +1,8 @@
 //
 //  ContentView.swift
-//  SimpleMediaReaderExampleRedux
+//  SimpleMediaReaderExample
 //
-//  Created by 酒井文也 on 2023/06/16.
+//  Created by 酒井文也 on 2024/09/12.
 //
 
 import SwiftUI
@@ -12,15 +12,13 @@ struct ContentView: View {
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
-                .foregroundColor(.accentColor)
+                .foregroundStyle(.tint)
             Text("Hello, world!")
         }
         .padding()
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+#Preview {
+    ContentView()
 }
