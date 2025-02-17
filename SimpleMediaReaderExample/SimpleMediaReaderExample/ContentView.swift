@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+// SwiftDataでのお気に入り機能と画面遷移アニメーションを取り入れたサンプル
+
 struct ContentView: View {
     var body: some View {
         VStack {
