@@ -1,4 +1,12 @@
-## DB起動手順
+# SimpleMediaReaderExample
+
+[ING] - 簡易的メディア型一覧表示サンプル
+
+## 1. サンプル概要
+
+## 2. Mockサーバー環境構築
+
+### DB起動手順
 
 こちらは、Dockerがインストールされている前提でのコマンド手順です。
 
@@ -21,3 +29,4 @@ $ SHOW DATABASES;
 # ⑤ もし存在していなければ新たにDBを作成する
 $ CREATE DATABASE [.envで設定したDB名];
 ```
+
