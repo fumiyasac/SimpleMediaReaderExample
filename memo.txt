@@ -10,12 +10,12 @@ $ docker-compose up -d
 $ docker exec -it [①で表示されたコンテナ名] bash
 
 # ③ Dockerコンテナ内のMySQLアクセスをする
-# ※rootパスワード = .envで設定したパスワード
+# ※ rootパスワード = .envで設定したパスワード
 $ mysql -h localhost -P 3306 -u root -p
 Enter password: 
 
 # ④ MySQL内でDBが作成されているか確認する
-# ※DB = .envで設定したDB名
+# ※ DB = .envで設定したDB名
 $ SHOW DATABASES;
 
 # ⑤ もし存在していなければ新たにDBを作成する
