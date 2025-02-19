@@ -12,5 +12,5 @@ DerivedData/
 Docker/.env
 
 # Prisma
-Prisma/node_modules
-Prisma/.env
+Backend/node_modules
+Backend/.env
