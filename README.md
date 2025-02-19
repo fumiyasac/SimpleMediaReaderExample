@@ -30,3 +30,34 @@ $ SHOW DATABASES;
 $ CREATE DATABASE [.envで設定したDB名];
 ```
 
+### Prismaのセットアップ手順
+
+このリポジトリをクローンする際は下記コマンドを実行します。
+
+```bash
+# ① Dockerを起動する
+$ npm install
+```
+
+Prismaのセットアップ時については、以下のコマンドを実行しています。
+
+```bash
+# ① package.jsonを新規作成する
+$ npm init -y
+
+# ② Typescriptのインストール
+$ npm install typescript ts-node @types/node --save-dev
+
+# ③ Prismaのインストール
+$ npm install prisma --save-dev
+
+# ④ Prismaの初期化処理を実施する
+# ※ datasource-providerオプションにはMySQLを指定する
+$ npx prisma init --datasource-provider mysql
+```
+
+__【参考資料】__
+
+- [ExpressとPrismaでAPIを作ってみた](https://logical-studio.com/develop/backend/20240524-express-prisma-api/)
+- [【NodeJS】PrismaやTypeScriptを使ってデータを操作する](https://isub.co.jp/nodejs/getting-started-with-prisma/)
+- [Node.js(Express.js)環境でPrisma ORMを使いこなすための基礎](https://reffect.co.jp/node-js/prisma-basic)
