@@ -10,14 +10,31 @@ import SwiftUI
 // SwiftDataでのお気に入り機能と画面遷移アニメーションを取り入れたサンプル
 
 struct ContentView: View {
+
+    // MARK: - Body
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView {
+            // FeedScreenコンテンツ画面
+            FeedScreen()
+                .tabItem {
+                    VStack {
+                        Image(systemName: "fork.knife.circle.fill")
+                        Text("Feed")
+                    }
+                }
+                .tag(0)
+            // FavoriteScreenコンテンツ画面
+            FavoriteScreen()
+                .tabItem {
+                    VStack {
+                        Image(systemName: "heart.circle.fill")
+                        Text("Favorite")
+                    }
+                }
+                .tag(1)
         }
-        .padding()
+        .accentColor(Color(uiColor: UIColor(code: "#985e41")))
     }
 }
 
