@@ -16,7 +16,7 @@ struct FeedScreen: View {
             Group {
                 Text("FeedScreen")
             }
-            .navigationBarTitle("🌽Feed")
+            .navigationBarTitle("🍽️Feed")
             .navigationBarTitleDisplayMode(.inline)
         }
     }
