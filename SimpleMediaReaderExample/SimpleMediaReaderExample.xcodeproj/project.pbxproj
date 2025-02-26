@@ -18,6 +18,7 @@
 		DE645A1E2D6C9E58007F8595 /* FeedScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE645A1D2D6C9E58007F8595 /* FeedScreen.swift */; };
 		DE645A202D6C9E6F007F8595 /* FavoriteScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE645A1F2D6C9E6F007F8595 /* FavoriteScreen.swift */; };
 		DE645A6C2D6EC044007F8595 /* FoodEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE645A6B2D6EC039007F8595 /* FoodEntity.swift */; };
+		DE645A702D6F58FA007F8595 /* FoodPageEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE645A6F2D6F58EE007F8595 /* FoodPageEntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		DE645A1D2D6C9E58007F8595 /* FeedScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedScreen.swift; sourceTree = "<group>"; };
 		DE645A1F2D6C9E6F007F8595 /* FavoriteScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteScreen.swift; sourceTree = "<group>"; };
 		DE645A6B2D6EC039007F8595 /* FoodEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodEntity.swift; sourceTree = "<group>"; };
+		DE645A6F2D6F58EE007F8595 /* FoodPageEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodPageEntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +87,6 @@
 		DE645A072D6C099D007F8595 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				DE645A6E2D6EF4D7007F8595 /* New Group */,
 				DE576C962C931FA400249532 /* ContentView.swift */,
 				DE645A0C2D6C0A03007F8595 /* Entity */,
 				DE645A0A2D6C09EC007F8595 /* Extension */,
@@ -119,6 +120,7 @@
 		DE645A0C2D6C0A03007F8595 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				DE645A6F2D6F58EE007F8595 /* FoodPageEntity.swift */,
 				DE645A6B2D6EC039007F8595 /* FoodEntity.swift */,
 			);
 			path = Entity;
@@ -175,13 +177,6 @@
 			children = (
 			);
 			path = StoredModel;
-			sourceTree = "<group>";
-		};
-		DE645A6E2D6EF4D7007F8595 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +255,7 @@
 				DE645A1E2D6C9E58007F8595 /* FeedScreen.swift in Sources */,
 				DE576C952C931FA400249532 /* SimpleMediaReaderExampleApp.swift in Sources */,
 				DE645A6C2D6EC044007F8595 /* FoodEntity.swift in Sources */,
+				DE645A702D6F58FA007F8595 /* FoodPageEntity.swift in Sources */,
 				DE645A122D6C9D42007F8595 /* UIColorExtension.swift in Sources */,
 				DE645A162D6C9D73007F8595 /* ColorExtension.swift in Sources */,
 				DE645A202D6C9E6F007F8595 /* FavoriteScreen.swift in Sources */,
