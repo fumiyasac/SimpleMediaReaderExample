@@ -93,7 +93,6 @@
 				DE645A0C2D6C0A03007F8595 /* Entity */,
 				DE645A0A2D6C09EC007F8595 /* Extension */,
 				DE645A0B2D6C09F9007F8595 /* Infrastructure */,
-				DE645A0D2D6C0A0D007F8595 /* Repository */,
 				DE645A0F2D6C0A2D007F8595 /* Screen */,
 				DE645A6D2D6EF4CB007F8595 /* StoredModel */,
 				DE645A102D6C0A38007F8595 /* Testing */,
@@ -127,13 +126,6 @@
 				DE645A6B2D6EC039007F8595 /* FoodEntity.swift */,
 			);
 			path = Entity;
-			sourceTree = "<group>";
-		};
-		DE645A0D2D6C0A0D007F8595 /* Repository */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Repository;
 			sourceTree = "<group>";
 		};
 		DE645A0E2D6C0A18007F8595 /* ViewStateProvider */ = {
