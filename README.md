@@ -38,7 +38,8 @@ $ show tables from media_reader_example;
 このリポジトリをクローンする際は下記コマンドを実行します。
 
 ```bash
-# ① Dockerを起動する
+# ① 必要なパッケージをインストールする
+$ cd Backend
 $ npm install
 ```
 
@@ -61,6 +62,14 @@ $ npx prisma init --datasource-provider mysql
 # ⑤ 作成されたschema.prismaを編集し、下記コマンドを実行してMigrationの実行をする
 # ※ 今回は一番最初のMigrationとして、データベースの初期化を行うため、名前を「init」にしている。
 $ npx prisma migrate dev --name [任意の名前]
+```
+
+### Mockサーバー起動
+
+```bash
+# ① サーバーを起動する
+$ cd Backend
+$ npm run start
 ```
 
 __【参考資料】__
