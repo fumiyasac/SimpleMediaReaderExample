@@ -1,22 +1,17 @@
-//
 import express from "express";
 import { PrismaClient } from "@prisma/client";
 
-//
 const prisma = new PrismaClient();
-const app = express();
+const server = express();
 
-//
-app.use(express.json());
-app.use(express.urlencoded({extended: true }));
+server.use(express.json());
+server.use(express.urlencoded({extended: true }));
 
-//
-app.get('/', async (req, res) => {
+server.get('/', async (req, res) => {
   const foods = await prisma.food.findMany();
   res.json(foods);
 })
 
-//
-app.listen(3000, () => {
+server.listen(3000, () => {
   console.log(`SimpleMediaReaderExample Mock Server is running...`);
 });
