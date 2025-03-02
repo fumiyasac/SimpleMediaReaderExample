@@ -13,11 +13,18 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-// まずは簡単なSchemaを作成してみる。
 model Food {
   id        Int      @id @default(autoincrement())
   title     String
   category  String
+  summary   String
+  thumbnailUrl String
+  publishedAt  String
+}
+
+model Pickup {
+  id        Int      @id @default(autoincrement())
+  title     String
   summary   String
   thumbnailUrl String
   publishedAt  String
