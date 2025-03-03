@@ -20,6 +20,7 @@
 		DE645A6C2D6EC044007F8595 /* FoodEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE645A6B2D6EC039007F8595 /* FoodEntity.swift */; };
 		DE645A702D6F58FA007F8595 /* FoodPageEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE645A6F2D6F58EE007F8595 /* FoodPageEntity.swift */; };
 		DE645A722D6FEC2C007F8595 /* APIClientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE645A712D6FEC2C007F8595 /* APIClientManager.swift */; };
+		DE645A742D759594007F8595 /* PickupEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE645A732D759584007F8595 /* PickupEntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		DE645A6B2D6EC039007F8595 /* FoodEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodEntity.swift; sourceTree = "<group>"; };
 		DE645A6F2D6F58EE007F8595 /* FoodPageEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodPageEntity.swift; sourceTree = "<group>"; };
 		DE645A712D6FEC2C007F8595 /* APIClientManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientManager.swift; sourceTree = "<group>"; };
+		DE645A732D759584007F8595 /* PickupEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickupEntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 			children = (
 				DE645A6F2D6F58EE007F8595 /* FoodPageEntity.swift */,
 				DE645A6B2D6EC039007F8595 /* FoodEntity.swift */,
+				DE645A732D759584007F8595 /* PickupEntity.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 				DE645A1E2D6C9E58007F8595 /* FeedScreen.swift in Sources */,
 				DE576C952C931FA400249532 /* SimpleMediaReaderExampleApp.swift in Sources */,
 				DE645A6C2D6EC044007F8595 /* FoodEntity.swift in Sources */,
+				DE645A742D759594007F8595 /* PickupEntity.swift in Sources */,
 				DE645A722D6FEC2C007F8595 /* APIClientManager.swift in Sources */,
 				DE645A702D6F58FA007F8595 /* FoodPageEntity.swift in Sources */,
 				DE645A122D6C9D42007F8595 /* UIColorExtension.swift in Sources */,
