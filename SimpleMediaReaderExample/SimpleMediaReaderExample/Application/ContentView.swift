@@ -24,6 +24,15 @@ struct ContentView: View {
                     }
                 }
                 .tag(0)
+            // PickupScreenコンテンツ画面
+            PickupScreen()
+                .tabItem {
+                    VStack {
+                        Image(systemName: "book.closed.circle.fill")
+                        Text("Pickup")
+                    }
+                }
+                .tag(1)
             // FavoriteScreenコンテンツ画面
             FavoriteScreen()
                 .tabItem {
@@ -32,7 +41,7 @@ struct ContentView: View {
                         Text("Favorite")
                     }
                 }
-                .tag(1)
+                .tag(2)
         }
         .accentColor(Color(uiColor: UIColor(code: "#985e41")))
     }

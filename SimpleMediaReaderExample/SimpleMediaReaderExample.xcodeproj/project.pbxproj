@@ -21,6 +21,7 @@
 		DE645A702D6F58FA007F8595 /* FoodPageEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE645A6F2D6F58EE007F8595 /* FoodPageEntity.swift */; };
 		DE645A722D6FEC2C007F8595 /* APIClientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE645A712D6FEC2C007F8595 /* APIClientManager.swift */; };
 		DE645A742D759594007F8595 /* PickupEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE645A732D759584007F8595 /* PickupEntity.swift */; };
+		DE645A772D75970A007F8595 /* PickupScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE645A762D75970A007F8595 /* PickupScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		DE645A6F2D6F58EE007F8595 /* FoodPageEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodPageEntity.swift; sourceTree = "<group>"; };
 		DE645A712D6FEC2C007F8595 /* APIClientManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientManager.swift; sourceTree = "<group>"; };
 		DE645A732D759584007F8595 /* PickupEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickupEntity.swift; sourceTree = "<group>"; };
+		DE645A762D75970A007F8595 /* PickupScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickupScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,8 +143,9 @@
 		DE645A0F2D6C0A2D007F8595 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
-				DE645A1A2D6C9E20007F8595 /* FeedScreen */,
-				DE645A192D6C9E07007F8595 /* FavoriteScreen */,
+				DE645A1A2D6C9E20007F8595 /* Feed */,
+				DE645A752D7595FB007F8595 /* Pickup */,
+				DE645A192D6C9E07007F8595 /* Favorite */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -154,20 +157,20 @@
 			path = Testing;
 			sourceTree = "<group>";
 		};
-		DE645A192D6C9E07007F8595 /* FavoriteScreen */ = {
+		DE645A192D6C9E07007F8595 /* Favorite */ = {
 			isa = PBXGroup;
 			children = (
 				DE645A1F2D6C9E6F007F8595 /* FavoriteScreen.swift */,
 			);
-			path = FavoriteScreen;
+			path = Favorite;
 			sourceTree = "<group>";
 		};
-		DE645A1A2D6C9E20007F8595 /* FeedScreen */ = {
+		DE645A1A2D6C9E20007F8595 /* Feed */ = {
 			isa = PBXGroup;
 			children = (
 				DE645A1D2D6C9E58007F8595 /* FeedScreen.swift */,
 			);
-			path = FeedScreen;
+			path = Feed;
 			sourceTree = "<group>";
 		};
 		DE645A6D2D6EF4CB007F8595 /* StoredModel */ = {
@@ -175,6 +178,14 @@
 			children = (
 			);
 			path = StoredModel;
+			sourceTree = "<group>";
+		};
+		DE645A752D7595FB007F8595 /* Pickup */ = {
+			isa = PBXGroup;
+			children = (
+				DE645A762D75970A007F8595 /* PickupScreen.swift */,
+			);
+			path = Pickup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +267,7 @@
 				DE645A742D759594007F8595 /* PickupEntity.swift in Sources */,
 				DE645A722D6FEC2C007F8595 /* APIClientManager.swift in Sources */,
 				DE645A702D6F58FA007F8595 /* FoodPageEntity.swift in Sources */,
+				DE645A772D75970A007F8595 /* PickupScreen.swift in Sources */,
 				DE645A122D6C9D42007F8595 /* UIColorExtension.swift in Sources */,
 				DE645A162D6C9D73007F8595 /* ColorExtension.swift in Sources */,
 				DE645A202D6C9E6F007F8595 /* FavoriteScreen.swift in Sources */,
