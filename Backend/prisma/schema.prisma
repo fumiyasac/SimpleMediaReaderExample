@@ -15,17 +15,17 @@ datasource db {
 
 model Food {
   id        Int      @id @default(autoincrement())
-  title     String
-  category  String
-  summary   String
-  thumbnailUrl String
-  publishedAt  String
+  title     String?
+  category  String?
+  summary   String?
+  thumbnailUrl String?
+  publishedAt  DateTime?
 }
 
 model Pickup {
   id        Int      @id @default(autoincrement())
-  title     String
-  summary   String
-  thumbnailUrl String
-  publishedAt  String
+  title     String?
+  summary   String?
+  thumbnailUrl String?
+  publishedAt  DateTime?
 }
