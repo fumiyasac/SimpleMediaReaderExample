@@ -22,6 +22,8 @@
 		DE645A722D6FEC2C007F8595 /* APIClientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE645A712D6FEC2C007F8595 /* APIClientManager.swift */; };
 		DE645A742D759594007F8595 /* PickupEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE645A732D759584007F8595 /* PickupEntity.swift */; };
 		DE645A772D75970A007F8595 /* PickupScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE645A762D75970A007F8595 /* PickupScreen.swift */; };
+		DE645A792D7D0CEB007F8595 /* FoodDataStoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE645A782D7D0CEB007F8595 /* FoodDataStoreManager.swift */; };
+		DE645A7B2D7D0D33007F8595 /* FoodDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE645A7A2D7D0D25007F8595 /* FoodDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 		DE645A712D6FEC2C007F8595 /* APIClientManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientManager.swift; sourceTree = "<group>"; };
 		DE645A732D759584007F8595 /* PickupEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickupEntity.swift; sourceTree = "<group>"; };
 		DE645A762D75970A007F8595 /* PickupScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickupScreen.swift; sourceTree = "<group>"; };
+		DE645A782D7D0CEB007F8595 /* FoodDataStoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDataStoreManager.swift; sourceTree = "<group>"; };
+		DE645A7A2D7D0D25007F8595 /* FoodDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				DE645A712D6FEC2C007F8595 /* APIClientManager.swift */,
+				DE645A782D7D0CEB007F8595 /* FoodDataStoreManager.swift */,
 			);
 			path = Infrastructure;
 			sourceTree = "<group>";
@@ -176,6 +181,7 @@
 		DE645A6D2D6EF4CB007F8595 /* StoredModel */ = {
 			isa = PBXGroup;
 			children = (
+				DE645A7A2D7D0D25007F8595 /* FoodDataSource.swift */,
 			);
 			path = StoredModel;
 			sourceTree = "<group>";
@@ -261,10 +267,12 @@
 				DE645A092D6C09E1007F8595 /* AppDelegate.swift in Sources */,
 				DE645A182D6C9D94007F8595 /* FirstAppearExtension.swift in Sources */,
 				DE576C972C931FA400249532 /* ContentView.swift in Sources */,
+				DE645A792D7D0CEB007F8595 /* FoodDataStoreManager.swift in Sources */,
 				DE645A1E2D6C9E58007F8595 /* FeedScreen.swift in Sources */,
 				DE576C952C931FA400249532 /* SimpleMediaReaderExampleApp.swift in Sources */,
 				DE645A6C2D6EC044007F8595 /* FoodEntity.swift in Sources */,
 				DE645A742D759594007F8595 /* PickupEntity.swift in Sources */,
+				DE645A7B2D7D0D33007F8595 /* FoodDataSource.swift in Sources */,
 				DE645A722D6FEC2C007F8595 /* APIClientManager.swift in Sources */,
 				DE645A702D6F58FA007F8595 /* FoodPageEntity.swift in Sources */,
 				DE645A772D75970A007F8595 /* PickupScreen.swift in Sources */,
