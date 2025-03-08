@@ -24,7 +24,7 @@ enum HTTPMethod {
 
 protocol APIClientManagerProtocol {}
 
-final class APIClientManager {
+final class APIClientManager: Sendable {
 
     // MARK: - Singleton Instance
 

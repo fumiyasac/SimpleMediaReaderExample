@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct FoodEntity: Hashable, Decodable {
+struct FoodEntity: Hashable, Decodable, Sendable {
     
     // MARK: - Property
 

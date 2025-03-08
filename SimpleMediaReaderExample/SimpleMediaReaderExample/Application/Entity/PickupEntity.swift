@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct PickupEntity: Hashable, Decodable {
+struct PickupEntity: Hashable, Decodable, Sendable {
     
     // MARK: - Property
 
