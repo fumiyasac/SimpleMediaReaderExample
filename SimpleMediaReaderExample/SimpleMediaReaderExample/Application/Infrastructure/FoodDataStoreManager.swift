@@ -22,14 +22,14 @@ final class FoodDataStoreManager {
 
     @MainActor
     private init() {
-        self.modelContainer = try! ModelContainer(for: Item.self)
+        self.modelContainer = try! ModelContainer(for: FoodDataSource.self)
         self.modelContext = modelContainer.mainContext
     }
 
     // MARK: - Function
 
-    func appendItem(item: Item) {
-        modelContext.insert(item)
+    func addFoodDataSource(foodDataSource: FoodDataSource) {
+        modelContext.insert(foodDataSource)
         do {
             try modelContext.save()
         } catch {
@@ -37,15 +37,15 @@ final class FoodDataStoreManager {
         }
     }
 
-    func fetchItems() -> [Item] {
+    func fetchFoodDataSource() -> [FoodDataSource] {
         do {
-            return try modelContext.fetch(FetchDescriptor<Item>())
+            return try modelContext.fetch(FetchDescriptor<FoodDataSource>())
         } catch {
             fatalError(error.localizedDescription)
         }
     }
 
-    func removeItem(_ item: Item) {
-        modelContext.delete(item)
+    func removeFoodDataSource(foodDataSource: FoodDataSource) {
+        modelContext.delete(foodDataSource)
     }
 }

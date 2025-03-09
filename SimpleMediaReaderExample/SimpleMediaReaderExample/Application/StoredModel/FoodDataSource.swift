@@ -9,10 +9,11 @@ import Foundation
 import SwiftData
 
 @Model
-final class Item {
+final class FoodDataSource {
 
     // MARK: - Property
 
+    var id: Int
     var title: String
     var category: String
     var summary: String
@@ -22,12 +23,14 @@ final class Item {
     // MARK: - Initializer
 
     init(
+        id: Int,
         title: String,
         category: String,
         summary: String,
         thumbnailUrl: String,
         publishedAt: String
     ) {
+        self.id = id
         self.title = title
         self.category = category
         self.summary = summary

@@ -24,6 +24,7 @@
 		DE645A772D75970A007F8595 /* PickupScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE645A762D75970A007F8595 /* PickupScreen.swift */; };
 		DE645A792D7D0CEB007F8595 /* FoodDataStoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE645A782D7D0CEB007F8595 /* FoodDataStoreManager.swift */; };
 		DE645A7B2D7D0D33007F8595 /* FoodDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE645A7A2D7D0D25007F8595 /* FoodDataSource.swift */; };
+		DE645A7E2D7D52C4007F8595 /* FavoriteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE645A7D2D7D52B0007F8595 /* FavoriteRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		DE645A762D75970A007F8595 /* PickupScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickupScreen.swift; sourceTree = "<group>"; };
 		DE645A782D7D0CEB007F8595 /* FoodDataStoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDataStoreManager.swift; sourceTree = "<group>"; };
 		DE645A7A2D7D0D25007F8595 /* FoodDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDataSource.swift; sourceTree = "<group>"; };
+		DE645A7D2D7D52B0007F8595 /* FavoriteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +200,7 @@
 		DE645A7C2D7D2817007F8595 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				DE645A7D2D7D52B0007F8595 /* FavoriteRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				DE645A092D6C09E1007F8595 /* AppDelegate.swift in Sources */,
 				DE645A182D6C9D94007F8595 /* FirstAppearExtension.swift in Sources */,
 				DE576C972C931FA400249532 /* ContentView.swift in Sources */,
+				DE645A7E2D7D52C4007F8595 /* FavoriteRepository.swift in Sources */,
 				DE645A792D7D0CEB007F8595 /* FoodDataStoreManager.swift in Sources */,
 				DE645A1E2D6C9E58007F8595 /* FeedScreen.swift in Sources */,
 				DE576C952C931FA400249532 /* SimpleMediaReaderExampleApp.swift in Sources */,
