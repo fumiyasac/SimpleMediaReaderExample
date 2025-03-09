@@ -24,12 +24,14 @@ enum HTTPMethod {
 
 protocol APIClientManagerProtocol {}
 
-final class APIClientManager: Sendable {
+final class APIClientManager {
 
     // MARK: - Singleton Instance
 
+    @MainActor
     static let shared = APIClientManager()
 
+    @MainActor
     private init() {}
 
     // MARK: - Enum
