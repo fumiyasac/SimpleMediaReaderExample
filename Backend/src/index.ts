@@ -5,11 +5,11 @@ const prisma = new PrismaClient();
 const server = express();
 
 server.use(express.json());
-server.use(express.urlencoded({extended: true }));
+server.use(express.urlencoded({ extended: true }));
 
-server.get('/', async (req, res) => {
+server.get('/', async (request, response) => {
   const foods = await prisma.food.findMany();
-  res.json(foods);
+  response.json(foods);
 })
 
 server.listen(3000, () => {
