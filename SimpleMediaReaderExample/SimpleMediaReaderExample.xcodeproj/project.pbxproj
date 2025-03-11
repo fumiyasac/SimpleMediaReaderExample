@@ -25,6 +25,7 @@
 		DE645A792D7D0CEB007F8595 /* FoodDataStoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE645A782D7D0CEB007F8595 /* FoodDataStoreManager.swift */; };
 		DE645A7B2D7D0D33007F8595 /* FoodDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE645A7A2D7D0D25007F8595 /* FoodDataSource.swift */; };
 		DE645A7E2D7D52C4007F8595 /* FavoriteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE645A7D2D7D52B0007F8595 /* FavoriteRepository.swift */; };
+		DE645A812D7FC62C007F8595 /* PickupRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE645A802D7FC61F007F8595 /* PickupRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		DE645A782D7D0CEB007F8595 /* FoodDataStoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDataStoreManager.swift; sourceTree = "<group>"; };
 		DE645A7A2D7D0D25007F8595 /* FoodDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDataSource.swift; sourceTree = "<group>"; };
 		DE645A7D2D7D52B0007F8595 /* FavoriteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteRepository.swift; sourceTree = "<group>"; };
+		DE645A802D7FC61F007F8595 /* PickupRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickupRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +202,7 @@
 		DE645A7C2D7D2817007F8595 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				DE645A802D7FC61F007F8595 /* PickupRepository.swift */,
 				DE645A7D2D7D52B0007F8595 /* FavoriteRepository.swift */,
 			);
 			path = Repository;
@@ -289,6 +292,7 @@
 				DE645A702D6F58FA007F8595 /* FoodPageEntity.swift in Sources */,
 				DE645A772D75970A007F8595 /* PickupScreen.swift in Sources */,
 				DE645A122D6C9D42007F8595 /* UIColorExtension.swift in Sources */,
+				DE645A812D7FC62C007F8595 /* PickupRepository.swift in Sources */,
 				DE645A162D6C9D73007F8595 /* ColorExtension.swift in Sources */,
 				DE645A202D6C9E6F007F8595 /* FavoriteScreen.swift in Sources */,
 			);
