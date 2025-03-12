@@ -5,10 +5,12 @@
 //  Created by 酒井文也 on 2025/03/11.
 //
 
+import Foundation
+
 // MARK: - Protocol
 
 protocol PickupRepositoryProtocol {
-    @MainActor func fetchPickups() -> [PickupEntity]
+    func fetchPickups() -> [PickupEntity]
 }
 
 // MARK: - PickupRepository
