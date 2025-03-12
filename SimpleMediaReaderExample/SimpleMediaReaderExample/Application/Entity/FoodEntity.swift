@@ -25,8 +25,8 @@ struct FoodEntity: Hashable, Decodable, Sendable {
         case title
         case category
         case summary
-        case thumbnailUrl = "thumbnail_url"
-        case publishedAt = "published_at"
+        case thumbnailUrl
+        case publishedAt
     }
 
     // MARK: - Initializer
