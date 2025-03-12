@@ -10,20 +10,22 @@ import Foundation
 // MARK: - Protocol
 
 protocol FavoriteRepositoryProtocol {
-    @MainActor func fetchFoodDataSource() -> [FoodDataSource]
-    @MainActor func removeFoodDataSource(foodDataSource: FoodDataSource)
+    func fetchFoodDataSource() -> [FoodDataSource]
+    func removeFoodDataSource(foodDataSource: FoodDataSource)
 }
 
 // MARK: - FavoriteRepository
 
-final class FavoriteRepository: FavoriteRepositoryProtocol {
+final class FavoriteRepository: @preconcurrency FavoriteRepositoryProtocol {
 
     // MARK: - Function
 
+    @MainActor
     func fetchFoodDataSource() -> [FoodDataSource] {
         FoodDataStoreManager.shared.fetchFoodDataSource()
     }
 
+    @MainActor
     func removeFoodDataSource(foodDataSource: FoodDataSource) {
         FoodDataStoreManager.shared.removeFoodDataSource(foodDataSource: foodDataSource)
     }
