@@ -8,7 +8,7 @@ server.use(express.json());
 server.use(express.urlencoded({ extended: true }));
 
 server.get('/food', async (request, response) => {
-  const page = parseInt(request.url.split("?page=")[1]);
+  const page = parseInt(request.url.split("?page=")[1]) || 1;
   const take = 10;
   const skip = (page - 1) * take;
   const foods = await prisma.food.findMany({ skip: skip, take: take });
