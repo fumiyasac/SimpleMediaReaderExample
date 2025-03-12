@@ -1,5 +1,5 @@
 //
-//  FeedScreen.swift
+//  FoodScreen.swift
 //  SimpleMediaReaderExample
 //
 //  Created by 酒井文也 on 2025/02/24.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct FeedScreen: View {
+struct FoodScreen: View {
 
     // MARK: - Body
 
@@ -16,12 +16,12 @@ struct FeedScreen: View {
             Group {
                 Text("FeedScreen")
             }
-            .navigationBarTitle("🍽️Feed")
+            .navigationBarTitle("🍽️Food")
             .navigationBarTitleDisplayMode(.inline)
         }
     }
 }
 
 #Preview {
-    FeedScreen()
+    FoodScreen()
 }

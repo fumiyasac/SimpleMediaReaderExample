@@ -22,7 +22,9 @@ enum HTTPMethod {
 
 // MARK: - Protocol
 
-protocol APIClientManagerProtocol {}
+protocol APIClientManagerProtocol {
+    func getFoodPage(_ page: Int) async throws -> FoodPageEntity
+}
 
 final class APIClientManager {
 
@@ -172,4 +174,16 @@ final class APIClientManager {
 
 // MARK: - APIClientManagerProtocol
 
-extension APIClientManager: APIClientManagerProtocol {}
+extension APIClientManager: APIClientManagerProtocol {
+
+    // MARK: - Function
+
+    func getFoodPage(_ page: Int) async throws -> FoodPageEntity {
+        try await executeAPIRequest(
+            endpointUrl: EndPoint.food.getBaseUrl(),
+            withParameters: ["page": page],
+            httpMethod: .GET,
+            responseFormat: FoodPageEntity.self
+        )
+    }
+}
