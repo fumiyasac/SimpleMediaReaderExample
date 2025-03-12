@@ -15,8 +15,8 @@ struct ContentView: View {
 
     var body: some View {
         TabView {
-            // FeedScreenコンテンツ画面
-            FeedScreen()
+            // FoodScreenコンテンツ画面
+            FoodScreen()
                 .tabItem {
                     VStack {
                         Image(systemName: "fork.knife.circle.fill")
