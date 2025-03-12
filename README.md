@@ -62,6 +62,10 @@ $ npx prisma init --datasource-provider mysql
 # ⑤ 作成されたschema.prismaを編集し、下記コマンドを実行してMigrationの実行をする
 # ※ 今回は一番最初のMigrationとして、データベースの初期化を行うため、名前を「init」にしている。
 $ npx prisma migrate dev --name [任意の名前]
+
+# ⑥ GUIでレコードを編集可能なツールを立ち上げる
+# （DockerでMySQLが起動している事が前提）Port番号のデフォルトで5555となります。
+$ npx prisma studio
 ```
 
 ### Mockサーバー起動
