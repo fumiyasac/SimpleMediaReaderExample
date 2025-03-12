@@ -22,7 +22,7 @@ enum HTTPMethod {
 
 // MARK: - Protocol
 
-protocol APIClientManagerProtocol {
+protocol APIClientManagerProtocol: Sendable {
     func getFoodPage(_ page: Int) async throws -> FoodPageEntity
 }
 
@@ -30,10 +30,8 @@ final class APIClientManager {
 
     // MARK: - Singleton Instance
 
-    @MainActor
     static let shared = APIClientManager()
 
-    @MainActor
     private init() {}
 
     // MARK: - Enum
