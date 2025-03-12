@@ -14,10 +14,20 @@ struct FoodScreen: View {
     var body: some View {
         NavigationStack {
             Group {
-                Text("FeedScreen")
+                Text("FoodScreen")
             }
             .navigationBarTitle("🍽️Food")
             .navigationBarTitleDisplayMode(.inline)
+            .onFirstAppear {
+                Task { @MainActor in
+                    do {
+                        let result = try await APIClientManager.shared.getFoodPage(1)
+                        print(result)
+                    } catch let error {
+                        print(error)
+                    }
+                }
+            }
         }
     }
 }
