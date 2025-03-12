@@ -15,14 +15,14 @@ struct FoodPageEntity: Hashable, Decodable, Sendable {
 
     let page: Int
     let hasNextPage: Bool
-    let food: [FoodEntity]
+    let foods: [FoodEntity]
     
     // MARK: - Enum
 
     private enum Keys: String, CodingKey {
         case page
-        case hasNextPage = "has_next_page"
-        case food
+        case hasNextPage
+        case foods
     }
 
     // MARK: - Initializer
@@ -35,7 +35,7 @@ struct FoodPageEntity: Hashable, Decodable, Sendable {
         // JSONの配列内の要素にある値をDecodeして初期化する
         self.page = try container.decode(Int.self, forKey: .page)
         self.hasNextPage = try container.decode(Bool.self, forKey: .hasNextPage)
-        self.food = try container.decode([FoodEntity].self, forKey: .food)
+        self.foods = try container.decode([FoodEntity].self, forKey: .foods)
     }
     // MARK: - Hashable
 

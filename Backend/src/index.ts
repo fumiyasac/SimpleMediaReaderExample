@@ -13,11 +13,11 @@ server.get('/food', async (request, response) => {
   const currentSkip = (page - 1) * take;
   const nextSkip = page * take;
   const currentFoods = await prisma.food.findMany({ skip: currentSkip, take: take });
-  const nextFood = await prisma.food.findMany({ skip: nextSkip, take: 1 });
+  const nextFood = await prisma.food.findFirst({ skip: nextSkip, take: 1 });
   response.json({
     page: page,
     foods: currentFoods,
-    hasNextPage: nextFood.length > 0,
+    hasNextPage: nextFood != null,
   });
 });
 
