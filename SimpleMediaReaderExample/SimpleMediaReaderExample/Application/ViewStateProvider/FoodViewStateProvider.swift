@@ -19,7 +19,7 @@ final class FoodViewStateProvider {
 
     private var _isLoading: Bool = false
     private var _errorMessage: String?
-    private var _foods: [FoodEntity] = []
+    private var _foods: [FoodViewObject] = []
 
     @ObservationIgnored
     private var _page: Int = 1
@@ -37,7 +37,7 @@ final class FoodViewStateProvider {
         _errorMessage
     }
 
-    var foods: [FoodEntity] {
+    var foods: [FoodViewObject] {
         _foods
     }
 
@@ -55,7 +55,18 @@ final class FoodViewStateProvider {
         Task {
             do {
                 let foodsPerPage = try await foodRepository.fetchFood(page: 1)
-                _foods = foodsPerPage.foods
+                // TODO: お気に入りをしているデータを反映する
+                _foods = foodsPerPage.foods.map {
+                    FoodViewObject(
+                        id: $0.id,
+                        title: $0.title,
+                        category: $0.category,
+                        summary: $0.summary,
+                        thumbnailUrl: $0.thumbnailUrl,
+                        publishedAt: $0.publishedAt,
+                        isFavorited: false
+                    )
+                }
                 _hasNextPage = foodsPerPage.hasNextPage
                 _page += 1
                 _errorMessage = nil
@@ -81,7 +92,18 @@ final class FoodViewStateProvider {
         Task {
             do {
                 let foodsPerPage = try await foodRepository.fetchFood(page: _page)
-                _foods += foodsPerPage.foods
+                // TODO: お気に入りをしているデータを反映する
+                _foods += foodsPerPage.foods.map {
+                    FoodViewObject(
+                        id: $0.id,
+                        title: $0.title,
+                        category: $0.category,
+                        summary: $0.summary,
+                        thumbnailUrl: $0.thumbnailUrl,
+                        publishedAt: $0.publishedAt,
+                        isFavorited: false
+                    )
+                }
                 _hasNextPage = foodsPerPage.hasNextPage
                 _page += 1
                 _errorMessage = nil
