@@ -30,6 +30,7 @@
 		DEE49CFA2D81C4B100CC22A8 /* FoodViewStateProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE49CF92D81C4A600CC22A8 /* FoodViewStateProvider.swift */; };
 		DEE49D1F2D87868E00CC22A8 /* FoodViewObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE49D1E2D87868200CC22A8 /* FoodViewObject.swift */; };
 		DEE49D232D881E7D00CC22A8 /* FoodRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE49D222D881E7D00CC22A8 /* FoodRowView.swift */; };
+		DEE49D272D88220B00CC22A8 /* ScalingHeaderScrollView in Frameworks */ = {isa = PBXBuildFile; productRef = DEE49D262D88220B00CC22A8 /* ScalingHeaderScrollView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEE49D272D88220B00CC22A8 /* ScalingHeaderScrollView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +266,10 @@
 				Base,
 			);
 			mainGroup = DE576C882C931FA400249532;
+			packageReferences = (
+				DEE49D242D8821EE00CC22A8 /* XCRemoteSwiftPackageReference "Nuke" */,
+				DEE49D252D88220B00CC22A8 /* XCRemoteSwiftPackageReference "ScalingHeaderScrollView" */,
+			);
 			productRefGroup = DE576C922C931FA400249532 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -518,6 +524,33 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DEE49D242D8821EE00CC22A8 /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.8.0;
+			};
+		};
+		DEE49D252D88220B00CC22A8 /* XCRemoteSwiftPackageReference "ScalingHeaderScrollView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/ScalingHeaderScrollView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DEE49D262D88220B00CC22A8 /* ScalingHeaderScrollView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DEE49D252D88220B00CC22A8 /* XCRemoteSwiftPackageReference "ScalingHeaderScrollView" */;
+			productName = ScalingHeaderScrollView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DE576C892C931FA400249532 /* Project object */;
 }
