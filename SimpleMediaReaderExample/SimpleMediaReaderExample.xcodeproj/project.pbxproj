@@ -29,6 +29,7 @@
 		DEE49CF82D81C33F00CC22A8 /* FoodRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE49CF72D81C33500CC22A8 /* FoodRepository.swift */; };
 		DEE49CFA2D81C4B100CC22A8 /* FoodViewStateProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE49CF92D81C4A600CC22A8 /* FoodViewStateProvider.swift */; };
 		DEE49D1F2D87868E00CC22A8 /* FoodViewObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE49D1E2D87868200CC22A8 /* FoodViewObject.swift */; };
+		DEE49D232D881E7D00CC22A8 /* FoodRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE49D222D881E7D00CC22A8 /* FoodRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		DEE49CF72D81C33500CC22A8 /* FoodRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodRepository.swift; sourceTree = "<group>"; };
 		DEE49CF92D81C4A600CC22A8 /* FoodViewStateProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewStateProvider.swift; sourceTree = "<group>"; };
 		DEE49D1E2D87868200CC22A8 /* FoodViewObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewObject.swift; sourceTree = "<group>"; };
+		DEE49D222D881E7D00CC22A8 /* FoodRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				DE645A1D2D6C9E58007F8595 /* FoodScreen.swift */,
+				DEE49D222D881E7D00CC22A8 /* FoodRowView.swift */,
 			);
 			path = Food;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 				DE645A742D759594007F8595 /* PickupEntity.swift in Sources */,
 				DEE49D1F2D87868E00CC22A8 /* FoodViewObject.swift in Sources */,
 				DEE49CF82D81C33F00CC22A8 /* FoodRepository.swift in Sources */,
+				DEE49D232D881E7D00CC22A8 /* FoodRowView.swift in Sources */,
 				DE645A7B2D7D0D33007F8595 /* FoodDataSource.swift in Sources */,
 				DE645A722D6FEC2C007F8595 /* APIClientManager.swift in Sources */,
 				DE645A702D6F58FA007F8595 /* FoodPageEntity.swift in Sources */,
