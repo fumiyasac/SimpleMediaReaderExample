@@ -31,6 +31,8 @@
 		DEE49D1F2D87868E00CC22A8 /* FoodViewObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE49D1E2D87868200CC22A8 /* FoodViewObject.swift */; };
 		DEE49D232D881E7D00CC22A8 /* FoodRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE49D222D881E7D00CC22A8 /* FoodRowView.swift */; };
 		DEE49D272D88220B00CC22A8 /* ScalingHeaderScrollView in Frameworks */ = {isa = PBXBuildFile; productRef = DEE49D262D88220B00CC22A8 /* ScalingHeaderScrollView */; };
+		DEE49D2D2D883C9A00CC22A8 /* NukeUI in Frameworks */ = {isa = PBXBuildFile; productRef = DEE49D2C2D883C9A00CC22A8 /* NukeUI */; };
+		DEE49D2F2D895C6900CC22A8 /* DateLabelFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE49D2E2D895C6200CC22A8 /* DateLabelFormatter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +60,7 @@
 		DEE49CF92D81C4A600CC22A8 /* FoodViewStateProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewStateProvider.swift; sourceTree = "<group>"; };
 		DEE49D1E2D87868200CC22A8 /* FoodViewObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewObject.swift; sourceTree = "<group>"; };
 		DEE49D222D881E7D00CC22A8 /* FoodRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodRowView.swift; sourceTree = "<group>"; };
+		DEE49D2E2D895C6200CC22A8 /* DateLabelFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateLabelFormatter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +69,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEE49D272D88220B00CC22A8 /* ScalingHeaderScrollView in Frameworks */,
+				DEE49D2D2D883C9A00CC22A8 /* NukeUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				DE576C932C931FA400249532 /* SimpleMediaReaderExample */,
+				DEE49D282D883C5F00CC22A8 /* Frameworks */,
 				DE576C922C931FA400249532 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -127,6 +132,7 @@
 		DE645A0A2D6C09EC007F8595 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				DEE49D2E2D895C6200CC22A8 /* DateLabelFormatter.swift */,
 				DE645A152D6C9D73007F8595 /* ColorExtension.swift */,
 				DE645A172D6C9D94007F8595 /* FirstAppearExtension.swift */,
 				DE645A112D6C9D42007F8595 /* UIColorExtension.swift */,
@@ -222,6 +228,13 @@
 			path = Repository;
 			sourceTree = "<group>";
 		};
+		DEE49D282D883C5F00CC22A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -267,8 +280,8 @@
 			);
 			mainGroup = DE576C882C931FA400249532;
 			packageReferences = (
-				DEE49D242D8821EE00CC22A8 /* XCRemoteSwiftPackageReference "Nuke" */,
 				DEE49D252D88220B00CC22A8 /* XCRemoteSwiftPackageReference "ScalingHeaderScrollView" */,
+				DEE49D2B2D883C9500CC22A8 /* XCRemoteSwiftPackageReference "Nuke" */,
 			);
 			productRefGroup = DE576C922C931FA400249532 /* Products */;
 			projectDirPath = "";
@@ -309,6 +322,7 @@
 				DEE49CF82D81C33F00CC22A8 /* FoodRepository.swift in Sources */,
 				DEE49D232D881E7D00CC22A8 /* FoodRowView.swift in Sources */,
 				DE645A7B2D7D0D33007F8595 /* FoodDataSource.swift in Sources */,
+				DEE49D2F2D895C6900CC22A8 /* DateLabelFormatter.swift in Sources */,
 				DE645A722D6FEC2C007F8595 /* APIClientManager.swift in Sources */,
 				DE645A702D6F58FA007F8595 /* FoodPageEntity.swift in Sources */,
 				DE645A772D75970A007F8595 /* PickupScreen.swift in Sources */,
@@ -456,8 +470,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -486,8 +499,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -526,20 +538,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		DEE49D242D8821EE00CC22A8 /* XCRemoteSwiftPackageReference "Nuke" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/kean/Nuke.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 12.8.0;
-			};
-		};
 		DEE49D252D88220B00CC22A8 /* XCRemoteSwiftPackageReference "ScalingHeaderScrollView" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/exyte/ScalingHeaderScrollView.git";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 1.1.5;
+			};
+		};
+		DEE49D2B2D883C9500CC22A8 /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.8.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -549,6 +561,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = DEE49D252D88220B00CC22A8 /* XCRemoteSwiftPackageReference "ScalingHeaderScrollView" */;
 			productName = ScalingHeaderScrollView;
+		};
+		DEE49D2C2D883C9A00CC22A8 /* NukeUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DEE49D2B2D883C9500CC22A8 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = NukeUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
