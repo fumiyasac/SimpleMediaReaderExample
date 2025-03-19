@@ -9,9 +9,9 @@ import Foundation
 import SwiftData
 
 final class FoodDataStoreManager {
-
+    
     // MARK: - Property
-
+    
     private let modelContainer: ModelContainer
     private let modelContext: ModelContext
 
@@ -47,5 +47,15 @@ final class FoodDataStoreManager {
 
     func removeFoodDataSource(foodDataSource: FoodDataSource) {
         modelContext.delete(foodDataSource)
+    }
+
+    func removeFoodDataSource(targetFoodId: Int) {
+        do {
+            return try modelContext.delete(model: FoodDataSource.self, where: #Predicate {
+                $0.targetFoodId == targetFoodId
+            })
+        } catch {
+            fatalError(error.localizedDescription)
+        }
     }
 }
