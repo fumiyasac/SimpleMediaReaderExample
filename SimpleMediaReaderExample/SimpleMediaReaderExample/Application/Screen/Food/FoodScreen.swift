@@ -38,12 +38,14 @@ struct FoodScreen: View {
                             LazyVStack {
                                 ForEach(foodViewStateProvider.foodViewObjects, id: \.id) { foodViewObject in
                                     // TODO: お気に入り処理が出来るようにする（SwiftDataとの連携）
-                                    FoodRowView(foodViewObject: foodViewObject, tapIsFavoritedButtonAction: { _ in })
-                                        .onAppear {
-                                            if foodViewObject.id == foodViewStateProvider.foodViewObjects.count && foodViewStateProvider.foodViewObjects.count > 0 {
-                                                foodViewStateProvider.fetchNextFoods()
-                                            }
+                                    FoodRowView(foodViewObject: foodViewObject, tapIsFavoritedButtonAction: { result in
+                                        print("お気に入り状態:", result)
+                                    })
+                                    .onAppear {
+                                        if foodViewObject.id == foodViewStateProvider.foodViewObjects.count && foodViewStateProvider.foodViewObjects.count > 0 {
+                                            foodViewStateProvider.fetchNextFoods()
                                         }
+                                    }
                                 }
                             }
                         }

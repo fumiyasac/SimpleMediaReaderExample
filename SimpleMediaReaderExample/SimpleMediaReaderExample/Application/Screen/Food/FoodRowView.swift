@@ -82,7 +82,9 @@ struct FoodRowView: View {
                     isFavorited = !isFavorited
                     tapIsFavoritedButtonAction(isFavorited)
                 }, label: {
-                    if foodViewObject.isFavorited {
+                    // TODO: お気に入り処理をSwiftDataで実施するための処理後に元に戻す
+                    //if foodViewObject.isFavorited {
+                    if isFavorited {
                         Image(systemName: "suit.heart.fill")
                     } else {
                         Image(systemName: "suit.heart")
