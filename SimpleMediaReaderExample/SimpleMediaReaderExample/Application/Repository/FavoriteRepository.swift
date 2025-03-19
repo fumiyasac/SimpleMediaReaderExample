@@ -16,17 +16,28 @@ protocol FavoriteRepositoryProtocol {
 
 // MARK: - FavoriteRepository
 
-final class FavoriteRepository: @preconcurrency FavoriteRepositoryProtocol {
+final class FavoriteRepository: FavoriteRepositoryProtocol {
+
+    // MARK: - Property
+
+    private let foodDataStoreManager: FoodDataStoreManager
+
+    // MARK: - Initializer
+
+    @MainActor
+    public init(
+        foodDataStoreManager: FoodDataStoreManager = FoodDataStoreManager.shared
+    ) {
+        self.foodDataStoreManager = foodDataStoreManager
+    }
 
     // MARK: - Function
 
-    @MainActor
     func fetchFoodDataSource() -> [FoodDataSource] {
-        FoodDataStoreManager.shared.fetchFoodDataSource()
+        foodDataStoreManager.fetchFoodDataSource()
     }
 
-    @MainActor
     func removeFoodDataSource(foodDataSource: FoodDataSource) {
-        FoodDataStoreManager.shared.removeFoodDataSource(foodDataSource: foodDataSource)
+        foodDataStoreManager.removeFoodDataSource(foodDataSource: foodDataSource)
     }
 }
