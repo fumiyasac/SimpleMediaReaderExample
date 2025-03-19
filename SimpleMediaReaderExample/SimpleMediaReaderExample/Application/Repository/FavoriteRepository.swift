@@ -11,7 +11,6 @@ import Foundation
 
 protocol FavoriteRepositoryProtocol {
     func fetchFoodDataSource() -> [FoodDataSource]
-    func removeFoodDataSource(foodDataSource: FoodDataSource)
 }
 
 // MARK: - FavoriteRepository
@@ -35,9 +34,5 @@ final class FavoriteRepository: FavoriteRepositoryProtocol {
 
     func fetchFoodDataSource() -> [FoodDataSource] {
         foodDataStoreManager.fetchFoodDataSource()
-    }
-
-    func removeFoodDataSource(foodDataSource: FoodDataSource) {
-        foodDataStoreManager.removeFoodDataSource(foodDataSource: foodDataSource)
     }
 }

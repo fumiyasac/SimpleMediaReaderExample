@@ -33,6 +33,7 @@
 		DEE49D272D88220B00CC22A8 /* ScalingHeaderScrollView in Frameworks */ = {isa = PBXBuildFile; productRef = DEE49D262D88220B00CC22A8 /* ScalingHeaderScrollView */; };
 		DEE49D2D2D883C9A00CC22A8 /* NukeUI in Frameworks */ = {isa = PBXBuildFile; productRef = DEE49D2C2D883C9A00CC22A8 /* NukeUI */; };
 		DEE49D2F2D895C6900CC22A8 /* DateLabelFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE49D2E2D895C6200CC22A8 /* DateLabelFormatter.swift */; };
+		DEE9049E2D8AF806004B906D /* FavoriteViewStateProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE9049D2D8AF7F2004B906D /* FavoriteViewStateProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +62,7 @@
 		DEE49D1E2D87868200CC22A8 /* FoodViewObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewObject.swift; sourceTree = "<group>"; };
 		DEE49D222D881E7D00CC22A8 /* FoodRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodRowView.swift; sourceTree = "<group>"; };
 		DEE49D2E2D895C6200CC22A8 /* DateLabelFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateLabelFormatter.swift; sourceTree = "<group>"; };
+		DEE9049D2D8AF7F2004B906D /* FavoriteViewStateProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewStateProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				DEE49CF92D81C4A600CC22A8 /* FoodViewStateProvider.swift */,
+				DEE9049D2D8AF7F2004B906D /* FavoriteViewStateProvider.swift */,
 			);
 			path = ViewStateProvider;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 				DE645A1E2D6C9E58007F8595 /* FoodScreen.swift in Sources */,
 				DE576C952C931FA400249532 /* SimpleMediaReaderExampleApp.swift in Sources */,
 				DE645A6C2D6EC044007F8595 /* FoodEntity.swift in Sources */,
+				DEE9049E2D8AF806004B906D /* FavoriteViewStateProvider.swift in Sources */,
 				DE645A742D759594007F8595 /* PickupEntity.swift in Sources */,
 				DEE49D1F2D87868E00CC22A8 /* FoodViewObject.swift in Sources */,
 				DEE49CF82D81C33F00CC22A8 /* FoodRepository.swift in Sources */,
