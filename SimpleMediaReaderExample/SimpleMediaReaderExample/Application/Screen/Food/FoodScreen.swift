@@ -33,7 +33,7 @@ struct FoodScreen: View {
                     Text("Error!!!")
                 default:
                     ScrollView {
-                        // 👉 このVStackが無いと下側に8.0pxの余白が生まれてしまうのでここにVStackを入れる
+                        // 👉 このVStackが無いと下側に8.0pxの余白が生まれてしまう...
                         VStack(spacing: 0.0) {
                             ForEach(foodViewStateProvider.foods, id: \.id) { food in
                                 // TODO: お気に入り処理が出来るようにする（SwiftDataとの連携）
