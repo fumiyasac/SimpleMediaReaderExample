@@ -47,6 +47,8 @@ struct FoodRowView: View {
                             .cornerRadius(8.0)
                     } else {
                         Color(uiColor: UIColor(code: "#dddddd"))
+                            .frame(width: 96.0, height: 64.0)
+                            .cornerRadius(8.0)
                     }
                 }
                 VStack(alignment: .leading, spacing: 0.0) {

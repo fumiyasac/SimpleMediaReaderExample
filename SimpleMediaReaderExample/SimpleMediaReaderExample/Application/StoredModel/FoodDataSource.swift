@@ -13,7 +13,7 @@ final class FoodDataSource {
 
     // MARK: - Property
 
-    var id: Int
+    var targetFoodId: Int
     var title: String
     var category: String
     var summary: String
@@ -23,14 +23,14 @@ final class FoodDataSource {
     // MARK: - Initializer
 
     init(
-        id: Int,
+        targetFoodId: Int,
         title: String,
         category: String,
         summary: String,
         thumbnailUrl: String,
         publishedAt: String
     ) {
-        self.id = id
+        self.targetFoodId = targetFoodId
         self.title = title
         self.category = category
         self.summary = summary
