@@ -19,7 +19,7 @@ final class FoodViewStateProvider {
 
     private var _isLoading: Bool = false
     private var _errorMessage: String?
-    private var _foods: [FoodViewObject] = []
+    private var _foodViewObjects: [FoodViewObject] = []
 
     @ObservationIgnored
     private var _page: Int = 1
@@ -37,8 +37,8 @@ final class FoodViewStateProvider {
         _errorMessage
     }
 
-    var foods: [FoodViewObject] {
-        _foods
+    var foodViewObjects: [FoodViewObject] {
+        _foodViewObjects
     }
 
     // MARK: - Initializer
@@ -49,14 +49,16 @@ final class FoodViewStateProvider {
 
     @MainActor
     func fetchInitialFoods() {
-        // Loading状態にする
+
+        // Loading状態にする＆初回読み込み実行時はpage番号をリセットする
         _isLoading = true
+        _page = 1
 
         Task {
             do {
                 let foodsPerPage = try await foodRepository.fetchFood(page: 1)
                 // TODO: お気に入りをしているデータを反映する
-                _foods = foodsPerPage.foods.map {
+                _foodViewObjects = foodsPerPage.foods.map {
                     FoodViewObject(
                         id: $0.id,
                         title: $0.title,
@@ -85,6 +87,7 @@ final class FoodViewStateProvider {
     @MainActor
     func fetchNextFoods() {
 
+        // 次のページが存在しない場合は以降の処理を実施しない
         if _hasNextPage == false {
             return
         }
@@ -93,7 +96,7 @@ final class FoodViewStateProvider {
             do {
                 let foodsPerPage = try await foodRepository.fetchFood(page: _page)
                 // TODO: お気に入りをしているデータを反映する
-                _foods += foodsPerPage.foods.map {
+                _foodViewObjects += foodsPerPage.foods.map {
                     FoodViewObject(
                         id: $0.id,
                         title: $0.title,
