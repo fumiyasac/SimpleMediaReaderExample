@@ -10,14 +10,27 @@ import SwiftUI
 
 struct FoodRowView: View {
 
+    // MARK: - Typealias
+
+    typealias TapIsFavoritedButtonAction = (Bool) -> Void
+
     // MARK: - Property
+
+    // Favoriteボタン（ハート型ボタン要素）の状態を管理するための変数
+    @State private var isFavorited: Bool = false
+
+    private var tapIsFavoritedButtonAction: FoodRowView.TapIsFavoritedButtonAction
 
     private let foodViewObject: FoodViewObject
 
     // MARK: - Initializer
 
-    init(foodViewObject: FoodViewObject) {
+    init(
+        foodViewObject: FoodViewObject,
+        tapIsFavoritedButtonAction: @escaping FoodRowView.TapIsFavoritedButtonAction
+    ) {
         self.foodViewObject = foodViewObject
+        self.tapIsFavoritedButtonAction = tapIsFavoritedButtonAction
     }
 
     // MARK: - Body
@@ -69,17 +82,18 @@ struct FoodRowView: View {
                     .lineLimit(3)
                 Spacer()
                 Button(action: {
-                    
+                    isFavorited = !isFavorited
+                    tapIsFavoritedButtonAction(isFavorited)
                 }, label: {
                     if foodViewObject.isFavorited {
-                        Image(systemName: "star.fill")
+                        Image(systemName: "suit.heart.fill")
                     } else {
-                        Image(systemName: "star")
+                        Image(systemName: "suit.heart")
                     }
                 })
-                .foregroundStyle(.yellow)
+                .foregroundStyle(.pink)
                 .buttonStyle(PlainButtonStyle())
-                .frame(width: 36.0, height: 36.0)
+                .frame(width: 40.0, height: 40.0)
             }
             .padding(.horizontal, 8.0)
             .padding(.vertical, 8.0)
@@ -102,5 +116,8 @@ struct FoodRowView: View {
         publishedAt: "2025-03-10 00:00:00.000",
         isFavorited: false
     )
-    FoodRowView(foodViewObject: foodViewObject)
+    FoodRowView(
+        foodViewObject: foodViewObject,
+        tapIsFavoritedButtonAction: { _ in }
+    )
 }
