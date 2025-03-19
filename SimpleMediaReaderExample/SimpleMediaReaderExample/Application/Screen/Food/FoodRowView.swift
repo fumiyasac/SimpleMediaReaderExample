@@ -64,20 +64,17 @@ struct FoodRowView: View {
                     .background(.orange)
                     // MEMO: 角丸にしたい場合には.cornerRadiusと.overlayを両方設定する必要がある
                     .cornerRadius(16.0)
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 16.0)
-                            .stroke(.white, lineWidth: 1.0)
-                    )
                     .padding(.vertical, 6.0)
                     Text(DateLabelFormatter.getDateStringFromAPI(apiDateString: foodViewObject.publishedAt))
-                        .font(.footnote)
+                        .font(.caption)
                 }
                 .padding(.horizontal, 8.0)
             }
-            .padding(.horizontal, 8.0)
+            .padding(.top, 12.0)
+            .padding(.horizontal, 12.0)
             HStack(spacing: 0.0) {
                 Text(foodViewObject.summary)
-                    .font(.callout)
+                    .font(.footnote)
                     .foregroundColor(.gray)
                     .lineLimit(3)
                 Spacer()
@@ -93,13 +90,15 @@ struct FoodRowView: View {
                 })
                 .foregroundStyle(.pink)
                 .buttonStyle(PlainButtonStyle())
-                .frame(width: 40.0, height: 40.0)
+                .frame(width: 36.0, height: 36.0)
             }
-            .padding(.horizontal, 8.0)
-            .padding(.vertical, 8.0)
+            .padding(.horizontal, 12.0)
+            .padding(.top, 6.0)
+            .padding(.bottom, 10.0)
             Divider()
                 .background(.gray)
-                .padding(.horizontal, 8.0)
+                .padding(.horizontal, 12.0)
+                .padding(.vertical, 0.0)
         }
     }
 }
@@ -113,7 +112,7 @@ struct FoodRowView: View {
         category: "Food",
         summary: "グルメ写真アプリサンプルNo.1になります。美味しそうな写真と一緒に是非雰囲気を味わってみて下さい😋",
         thumbnailUrl: "https://media-reader-example.s3.ap-northeast-1.amazonaws.com/meals_image_example1.jpg",
-        publishedAt: "2025-03-10 00:00:00.000",
+        publishedAt: "2025-03-10T00:00:00.000Z",
         isFavorited: false
     )
     FoodRowView(
