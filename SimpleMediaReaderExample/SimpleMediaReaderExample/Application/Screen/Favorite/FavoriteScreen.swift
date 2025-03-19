@@ -25,10 +25,13 @@ struct FavoriteScreen: View {
         NavigationStack {
             Group {
                 List {
-                    ForEach(favoriteViewStateProvider.foodDataSources, id: \.id) { foodDataSource in
-                        Text(foodDataSource.title)
+                    Section(header: Text("あなたが登録したお気に入り一覧:")) {
+                        ForEach(favoriteViewStateProvider.foodDataSources, id: \.id) { foodDataSource in
+                            FavoriteRowView(foodDataSource: foodDataSource)
+                        }
                     }
                 }
+                .listStyle(.grouped)
             }
             .onAppear {
                 favoriteViewStateProvider.fetchFoodDataSources()
@@ -37,8 +40,4 @@ struct FavoriteScreen: View {
             .navigationBarTitleDisplayMode(.inline)
         }
     }
-}
-
-#Preview {
-    FavoriteScreen()
 }

@@ -32,6 +32,7 @@
 		DEE49D2D2D883C9A00CC22A8 /* NukeUI in Frameworks */ = {isa = PBXBuildFile; productRef = DEE49D2C2D883C9A00CC22A8 /* NukeUI */; };
 		DEE49D2F2D895C6900CC22A8 /* DateLabelFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE49D2E2D895C6200CC22A8 /* DateLabelFormatter.swift */; };
 		DEE9049E2D8AF806004B906D /* FavoriteViewStateProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE9049D2D8AF7F2004B906D /* FavoriteViewStateProvider.swift */; };
+		DEE904A42D8B81C6004B906D /* FavoriteRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE904A32D8B81C6004B906D /* FavoriteRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		DEE49D222D881E7D00CC22A8 /* FoodRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodRowView.swift; sourceTree = "<group>"; };
 		DEE49D2E2D895C6200CC22A8 /* DateLabelFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateLabelFormatter.swift; sourceTree = "<group>"; };
 		DEE9049D2D8AF7F2004B906D /* FavoriteViewStateProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewStateProvider.swift; sourceTree = "<group>"; };
+		DEE904A32D8B81C6004B906D /* FavoriteRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				DE645A1F2D6C9E6F007F8595 /* FavoriteScreen.swift */,
+				DEE904A32D8B81C6004B906D /* FavoriteRowView.swift */,
 			);
 			path = Favorite;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 				DE645A092D6C09E1007F8595 /* AppDelegate.swift in Sources */,
 				DE645A182D6C9D94007F8595 /* FirstAppearExtension.swift in Sources */,
 				DE576C972C931FA400249532 /* ContentView.swift in Sources */,
+				DEE904A42D8B81C6004B906D /* FavoriteRowView.swift in Sources */,
 				DE645A7E2D7D52C4007F8595 /* FavoriteRepository.swift in Sources */,
 				DE645A792D7D0CEB007F8595 /* FoodDataStoreManager.swift in Sources */,
 				DE645A1E2D6C9E58007F8595 /* FoodScreen.swift in Sources */,
