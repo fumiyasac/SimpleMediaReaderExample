@@ -31,6 +31,9 @@ struct FoodRowView: View {
     ) {
         self.foodViewObject = foodViewObject
         self.tapIsFavoritedButtonAction = tapIsFavoritedButtonAction
+
+        // イニシャライザ内で「_(変数名)」値を代入することでState値の初期化を実行する
+        _isFavorited = State(initialValue: foodViewObject.isFavorited)
     }
 
     // MARK: - Body

@@ -43,9 +43,12 @@ final class FoodViewStateProvider {
 
     // MARK: - Initializer
 
+    @MainActor
     init(foodRepository: FoodRepositoryProtocol = FoodRepository()) {
         self.foodRepository = foodRepository
     }
+
+    // MARK: - Function
 
     @MainActor
     func fetchInitialFoods() {
@@ -66,7 +69,7 @@ final class FoodViewStateProvider {
                         summary: $0.summary,
                         thumbnailUrl: $0.thumbnailUrl,
                         publishedAt: $0.publishedAt,
-                        isFavorited: false
+                        isFavorited: getTargetFoodIds().contains($0.id)
                     )
                 }
                 _hasNextPage = foodsPerPage.hasNextPage
@@ -104,7 +107,7 @@ final class FoodViewStateProvider {
                         summary: $0.summary,
                         thumbnailUrl: $0.thumbnailUrl,
                         publishedAt: $0.publishedAt,
-                        isFavorited: false
+                        isFavorited: getTargetFoodIds().contains($0.id)
                     )
                 }
                 _hasNextPage = foodsPerPage.hasNextPage
@@ -114,5 +117,50 @@ final class FoodViewStateProvider {
             } catch {}
         }
     }
-}
 
+    @MainActor
+    func addOrDeleteFoodDataStore(foodViewObject: FoodViewObject, shouldAdd: Bool) {
+        if shouldAdd {
+            let newFoodDataSource = FoodDataSource(
+                targetFoodId: foodViewObject.id,
+                title: foodViewObject.title,
+                category: foodViewObject.category,
+                summary: foodViewObject.summary,
+                thumbnailUrl: foodViewObject.thumbnailUrl,
+                publishedAt: foodViewObject.publishedAt
+            )
+            foodRepository.addFoodDataSource(foodDataSource: newFoodDataSource)
+        } else {
+            foodRepository.removeFoodDataSource(targetFoodId: foodViewObject.id)
+        }
+        replaceNewFoodViewObjects(targetFoodId: foodViewObject.id, shouldAdd: shouldAdd)
+    }
+
+    // MARK: - Private Function
+
+    private func getTargetFoodIds() -> [Int] {
+        let foodDataSources = foodRepository.fetchFoodDataSource()
+        return foodDataSources.map { $0.targetFoodId }
+    }
+
+    private func replaceNewFoodViewObjects(targetFoodId: Int, shouldAdd: Bool) {
+        var newFoodViewObjects: [FoodViewObject] = []
+        let _ = _foodViewObjects.forEach {
+            if $0.id == targetFoodId {
+                let newFoodViewObject = FoodViewObject(
+                    id: $0.id,
+                    title: $0.title,
+                    category: $0.category,
+                    summary: $0.summary,
+                    thumbnailUrl: $0.thumbnailUrl,
+                    publishedAt: $0.publishedAt,
+                    isFavorited: shouldAdd
+                )
+                newFoodViewObjects.append(newFoodViewObject)
+            } else {
+                newFoodViewObjects.append($0)
+            }
+        }
+        _foodViewObjects = newFoodViewObjects
+    }
+}
