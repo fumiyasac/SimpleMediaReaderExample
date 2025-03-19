@@ -60,7 +60,6 @@ final class FoodViewStateProvider {
         Task {
             do {
                 let foodsPerPage = try await foodRepository.fetchFood(page: 1)
-                // TODO: お気に入りをしているデータを反映する
                 _foodViewObjects = foodsPerPage.foods.map {
                     FoodViewObject(
                         id: $0.id,
@@ -98,7 +97,6 @@ final class FoodViewStateProvider {
         Task {
             do {
                 let foodsPerPage = try await foodRepository.fetchFood(page: _page)
-                // TODO: お気に入りをしているデータを反映する
                 _foodViewObjects += foodsPerPage.foods.map {
                     FoodViewObject(
                         id: $0.id,
