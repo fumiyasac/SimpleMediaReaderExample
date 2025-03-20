@@ -28,6 +28,13 @@ struct FavoriteScreen: View {
                     Section(header: Text("あなたが登録したお気に入り一覧:")) {
                         ForEach(favoriteViewStateProvider.foodDataSources, id: \.id) { foodDataSource in
                             FavoriteRowView(foodDataSource: foodDataSource)
+                                .swipeActions(edge: .trailing) {
+                                    Button(role: .destructive) {
+                                        favoriteViewStateProvider.removeFoodDataSource(foodDataSource: foodDataSource)
+                                    } label: {
+                                        Text("削除")
+                                    }
+                                }
                         }
                     }
                 }

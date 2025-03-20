@@ -134,6 +134,30 @@ final class FoodViewStateProvider {
         replaceNewFoodViewObjects(targetFoodId: foodViewObject.id, shouldAdd: shouldAdd)
     }
 
+    func reloadFoodViewObjects() {
+
+        // 表示対象のViewObjectが空の場合は以降の処理を実施しない
+        if _foodViewObjects.count == 0 {
+            return
+        }
+
+        // 最新のお気に入りデータを反映して、再度表示対象の変数に反映する
+        var newFoodViewObjects: [FoodViewObject] = []
+        let _ = _foodViewObjects.forEach {
+            let newFoodViewObject = FoodViewObject(
+                id: $0.id,
+                title: $0.title,
+                category: $0.category,
+                summary: $0.summary,
+                thumbnailUrl: $0.thumbnailUrl,
+                publishedAt: $0.publishedAt,
+                isFavorited: getTargetFoodIds().contains($0.id)
+            )
+            newFoodViewObjects.append(newFoodViewObject)
+        }
+        _foodViewObjects = newFoodViewObjects
+    }
+    
     // MARK: - Private Function
 
     private func getTargetFoodIds() -> [Int] {

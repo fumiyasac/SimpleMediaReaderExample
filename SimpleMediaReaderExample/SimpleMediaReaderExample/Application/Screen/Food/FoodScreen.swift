@@ -48,7 +48,13 @@ struct FoodScreen: View {
                                     }
                                 }
                             }
+                            // 👉 LazyVStackにidを付与する事でFavoriteタブで解除したお気に入り状態を反映させる
+                            // ※この方法が正しいかは正直自信がない...
+                            .id(UUID().uuidString)
                         }
+                    }
+                    .onAppear {
+                        foodViewStateProvider.reloadFoodViewObjects()
                     }
                     .refreshable {
                         foodViewStateProvider.fetchInitialFoods()

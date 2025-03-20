@@ -36,4 +36,11 @@ final class FavoriteViewStateProvider {
     func fetchFoodDataSources() {
         _foodDataSources = favoriteRepository.fetchFoodDataSource()
     }
+
+    @MainActor
+    func removeFoodDataSource(foodDataSource: FoodDataSource) {
+        // 👉 表示対象の要素から該当のFoodDataSourceを削除した後に、SwiftDataから削除を実施する
+        _foodDataSources = _foodDataSources.filter { $0.targetFoodId != foodDataSource.targetFoodId }
+        favoriteRepository.removeFoodDataSource(targetFoodId: foodDataSource.targetFoodId)
+    }
 }
