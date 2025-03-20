@@ -37,9 +37,8 @@ struct FoodScreen: View {
                         VStack(spacing: 0.0) {
                             LazyVStack {
                                 ForEach(foodViewStateProvider.foodViewObjects, id: \.id) { foodViewObject in
-                                    // TODO: お気に入り処理が出来るようにする（SwiftDataとの連携）
+                                    // お気に入り処理が出来るようにする（SwiftDataと連携したお気に入りの保存）
                                     FoodRowView(foodViewObject: foodViewObject, tapIsFavoritedButtonAction: { result in
-                                        print("お気に入り状態:", result)
                                         foodViewStateProvider.addOrDeleteFoodDataStore(foodViewObject: foodViewObject, shouldAdd: result)
                                     })
                                     .onAppear {
