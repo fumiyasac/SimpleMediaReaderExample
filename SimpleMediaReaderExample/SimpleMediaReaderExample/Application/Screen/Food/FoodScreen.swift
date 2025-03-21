@@ -27,10 +27,14 @@ struct FoodScreen: View {
                 switch (foodViewStateProvider.isLoading, foodViewStateProvider.errorMessage) {
                 case (true, _):
                     // Loading Indicatorを表示する
-                    Text("読み込み中...")
+                     ExecutingConnectionView()
                 case (_, foodViewStateProvider.errorMessage) where foodViewStateProvider.errorMessage != nil:
                     // Error Message画面を表示する
-                    Text("Error!!!")
+                    ConnectionErrorView(
+                        tapButtonAction: {
+                            foodViewStateProvider.fetchInitialFoods()
+                        }
+                    )
                 default:
                     ScrollView {
                         // 👉 このVStackが無いと下側に8.0pxの余白が生まれてしまう...
