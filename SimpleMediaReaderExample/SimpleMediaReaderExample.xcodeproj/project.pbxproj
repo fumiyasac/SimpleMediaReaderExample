@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		DE3BEAA52D8D574A008B49E8 /* ConnectionErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3BEAA42D8D574A008B49E8 /* ConnectionErrorView.swift */; };
+		DE3BEAA92D8D5DBE008B49E8 /* Cosmos in Frameworks */ = {isa = PBXBuildFile; productRef = DE3BEAA82D8D5DBE008B49E8 /* Cosmos */; };
+		DE3BEAAB2D8D5E77008B49E8 /* RatingViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3BEAAA2D8D5E77008B49E8 /* RatingViewRepresentable.swift */; };
+		DE3BEAAD2D8D5EBD008B49E8 /* StarRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3BEAAC2D8D5EBD008B49E8 /* StarRatingView.swift */; };
 		DE576C952C931FA400249532 /* SimpleMediaReaderExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE576C942C931FA400249532 /* SimpleMediaReaderExampleApp.swift */; };
 		DE576C972C931FA400249532 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE576C962C931FA400249532 /* ContentView.swift */; };
 		DE576C992C931FA600249532 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE576C982C931FA600249532 /* Assets.xcassets */; };
@@ -40,6 +43,8 @@
 
 /* Begin PBXFileReference section */
 		DE3BEAA42D8D574A008B49E8 /* ConnectionErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionErrorView.swift; sourceTree = "<group>"; };
+		DE3BEAAA2D8D5E77008B49E8 /* RatingViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingViewRepresentable.swift; sourceTree = "<group>"; };
+		DE3BEAAC2D8D5EBD008B49E8 /* StarRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarRatingView.swift; sourceTree = "<group>"; };
 		DE576C912C931FA400249532 /* SimpleMediaReaderExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleMediaReaderExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE576C942C931FA400249532 /* SimpleMediaReaderExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleMediaReaderExampleApp.swift; sourceTree = "<group>"; };
 		DE576C962C931FA400249532 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -74,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE3BEAA92D8D5DBE008B49E8 /* Cosmos in Frameworks */,
 				DEE49D272D88220B00CC22A8 /* ScalingHeaderScrollView in Frameworks */,
 				DEE49D2D2D883C9A00CC22A8 /* NukeUI in Frameworks */,
 			);
@@ -85,9 +91,19 @@
 		DE3BEAA32D8D570B008B49E8 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				DE3BEAA62D8D5BDA008B49E8 /* UIViewRepresentable */,
 				DE3BEAA42D8D574A008B49E8 /* ConnectionErrorView.swift */,
+				DE3BEAAC2D8D5EBD008B49E8 /* StarRatingView.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		DE3BEAA62D8D5BDA008B49E8 /* UIViewRepresentable */ = {
+			isa = PBXGroup;
+			children = (
+				DE3BEAAA2D8D5E77008B49E8 /* RatingViewRepresentable.swift */,
+			);
+			path = UIViewRepresentable;
 			sourceTree = "<group>";
 		};
 		DE576C882C931FA400249532 = {
@@ -299,6 +315,7 @@
 			packageReferences = (
 				DEE49D252D88220B00CC22A8 /* XCRemoteSwiftPackageReference "ScalingHeaderScrollView" */,
 				DEE49D2B2D883C9500CC22A8 /* XCRemoteSwiftPackageReference "Nuke" */,
+				DE3BEAA72D8D5DBE008B49E8 /* XCRemoteSwiftPackageReference "Cosmos" */,
 			);
 			productRefGroup = DE576C922C931FA400249532 /* Products */;
 			projectDirPath = "";
@@ -340,6 +357,7 @@
 				DE645A742D759594007F8595 /* PickupEntity.swift in Sources */,
 				DEE49D1F2D87868E00CC22A8 /* FoodViewObject.swift in Sources */,
 				DEE49CF82D81C33F00CC22A8 /* FoodRepository.swift in Sources */,
+				DE3BEAAB2D8D5E77008B49E8 /* RatingViewRepresentable.swift in Sources */,
 				DEE49D232D881E7D00CC22A8 /* FoodRowView.swift in Sources */,
 				DE645A7B2D7D0D33007F8595 /* FoodDataSource.swift in Sources */,
 				DEE49D2F2D895C6900CC22A8 /* DateLabelFormatter.swift in Sources */,
@@ -351,6 +369,7 @@
 				DEE49CFA2D81C4B100CC22A8 /* FoodViewStateProvider.swift in Sources */,
 				DE645A162D6C9D73007F8595 /* ColorExtension.swift in Sources */,
 				DE645A202D6C9E6F007F8595 /* FavoriteScreen.swift in Sources */,
+				DE3BEAAD2D8D5EBD008B49E8 /* StarRatingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,6 +577,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		DE3BEAA72D8D5DBE008B49E8 /* XCRemoteSwiftPackageReference "Cosmos" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/Cosmos.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 25.0.1;
+			};
+		};
 		DEE49D252D88220B00CC22A8 /* XCRemoteSwiftPackageReference "ScalingHeaderScrollView" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/exyte/ScalingHeaderScrollView.git";
@@ -577,6 +604,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		DE3BEAA82D8D5DBE008B49E8 /* Cosmos */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE3BEAA72D8D5DBE008B49E8 /* XCRemoteSwiftPackageReference "Cosmos" */;
+			productName = Cosmos;
+		};
 		DEE49D262D88220B00CC22A8 /* ScalingHeaderScrollView */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = DEE49D252D88220B00CC22A8 /* XCRemoteSwiftPackageReference "ScalingHeaderScrollView" */;
