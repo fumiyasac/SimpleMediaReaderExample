@@ -12,6 +12,7 @@
 		DE3BEAAB2D8D5E77008B49E8 /* RatingViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3BEAAA2D8D5E77008B49E8 /* RatingViewRepresentable.swift */; };
 		DE3BEAAD2D8D5EBD008B49E8 /* StarRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3BEAAC2D8D5EBD008B49E8 /* StarRatingView.swift */; };
 		DE3BEAB12D8D5FEA008B49E8 /* LoadingIndicatorViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3BEAB02D8D5FEA008B49E8 /* LoadingIndicatorViewRepresentable.swift */; };
+		DE3BEAB52D8D618E008B49E8 /* ExecutingConnectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3BEAB42D8D618E008B49E8 /* ExecutingConnectionView.swift */; };
 		DE576C952C931FA400249532 /* SimpleMediaReaderExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE576C942C931FA400249532 /* SimpleMediaReaderExampleApp.swift */; };
 		DE576C972C931FA400249532 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE576C962C931FA400249532 /* ContentView.swift */; };
 		DE576C992C931FA600249532 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE576C982C931FA600249532 /* Assets.xcassets */; };
@@ -47,6 +48,7 @@
 		DE3BEAAA2D8D5E77008B49E8 /* RatingViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingViewRepresentable.swift; sourceTree = "<group>"; };
 		DE3BEAAC2D8D5EBD008B49E8 /* StarRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarRatingView.swift; sourceTree = "<group>"; };
 		DE3BEAB02D8D5FEA008B49E8 /* LoadingIndicatorViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicatorViewRepresentable.swift; sourceTree = "<group>"; };
+		DE3BEAB42D8D618E008B49E8 /* ExecutingConnectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecutingConnectionView.swift; sourceTree = "<group>"; };
 		DE576C912C931FA400249532 /* SimpleMediaReaderExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleMediaReaderExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE576C942C931FA400249532 /* SimpleMediaReaderExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleMediaReaderExampleApp.swift; sourceTree = "<group>"; };
 		DE576C962C931FA400249532 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				DE3BEAA62D8D5BDA008B49E8 /* UIViewRepresentable */,
 				DE3BEAA42D8D574A008B49E8 /* ConnectionErrorView.swift */,
 				DE3BEAAC2D8D5EBD008B49E8 /* StarRatingView.swift */,
+				DE3BEAB42D8D618E008B49E8 /* ExecutingConnectionView.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -358,6 +361,7 @@
 				DE576C952C931FA400249532 /* SimpleMediaReaderExampleApp.swift in Sources */,
 				DE645A6C2D6EC044007F8595 /* FoodEntity.swift in Sources */,
 				DEE9049E2D8AF806004B906D /* FavoriteViewStateProvider.swift in Sources */,
+				DE3BEAB52D8D618E008B49E8 /* ExecutingConnectionView.swift in Sources */,
 				DE645A742D759594007F8595 /* PickupEntity.swift in Sources */,
 				DEE49D1F2D87868E00CC22A8 /* FoodViewObject.swift in Sources */,
 				DEE49CF82D81C33F00CC22A8 /* FoodRepository.swift in Sources */,
