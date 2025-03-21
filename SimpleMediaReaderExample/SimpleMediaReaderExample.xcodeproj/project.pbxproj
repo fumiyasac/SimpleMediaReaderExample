@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE3BEAA52D8D574A008B49E8 /* ConnectionErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3BEAA42D8D574A008B49E8 /* ConnectionErrorView.swift */; };
 		DE576C952C931FA400249532 /* SimpleMediaReaderExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE576C942C931FA400249532 /* SimpleMediaReaderExampleApp.swift */; };
 		DE576C972C931FA400249532 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE576C962C931FA400249532 /* ContentView.swift */; };
 		DE576C992C931FA600249532 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE576C982C931FA600249532 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DE3BEAA42D8D574A008B49E8 /* ConnectionErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionErrorView.swift; sourceTree = "<group>"; };
 		DE576C912C931FA400249532 /* SimpleMediaReaderExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleMediaReaderExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE576C942C931FA400249532 /* SimpleMediaReaderExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleMediaReaderExampleApp.swift; sourceTree = "<group>"; };
 		DE576C962C931FA400249532 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -80,6 +82,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DE3BEAA32D8D570B008B49E8 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				DE3BEAA42D8D574A008B49E8 /* ConnectionErrorView.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		DE576C882C931FA400249532 = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +185,7 @@
 		DE645A0F2D6C0A2D007F8595 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				DE3BEAA32D8D570B008B49E8 /* Common */,
 				DE645A1A2D6C9E20007F8595 /* Food */,
 				DE645A752D7595FB007F8595 /* Pickup */,
 				DE645A192D6C9E07007F8595 /* Favorite */,
@@ -321,6 +332,7 @@
 				DEE904A42D8B81C6004B906D /* FavoriteRowView.swift in Sources */,
 				DE645A7E2D7D52C4007F8595 /* FavoriteRepository.swift in Sources */,
 				DE645A792D7D0CEB007F8595 /* FoodDataStoreManager.swift in Sources */,
+				DE3BEAA52D8D574A008B49E8 /* ConnectionErrorView.swift in Sources */,
 				DE645A1E2D6C9E58007F8595 /* FoodScreen.swift in Sources */,
 				DE576C952C931FA400249532 /* SimpleMediaReaderExampleApp.swift in Sources */,
 				DE645A6C2D6EC044007F8595 /* FoodEntity.swift in Sources */,
