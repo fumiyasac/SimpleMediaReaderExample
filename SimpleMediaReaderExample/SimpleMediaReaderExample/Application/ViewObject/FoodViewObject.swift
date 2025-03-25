@@ -20,7 +20,7 @@ struct FoodViewObject: Identifiable, Equatable {
     let thumbnailUrl: String
     let publishedAt: String
     // MEMO: 表示処理時点でのハートマークの状態を示す
-    var isFavorited: Bool = false
+    let isFavorited: Bool
 
     // MARK: - Equatable
 
