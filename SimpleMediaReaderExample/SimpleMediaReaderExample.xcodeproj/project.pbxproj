@@ -26,9 +26,12 @@
 		DE645A6C2D6EC044007F8595 /* FoodEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE645A6B2D6EC039007F8595 /* FoodEntity.swift */; };
 		DE645A702D6F58FA007F8595 /* FoodPageEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE645A6F2D6F58EE007F8595 /* FoodPageEntity.swift */; };
 		DE645A722D6FEC2C007F8595 /* APIClientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE645A712D6FEC2C007F8595 /* APIClientManager.swift */; };
+		DE645A742D759594007F8595 /* PickupEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE645A732D759584007F8595 /* PickupEntity.swift */; };
+		DE645A772D75970A007F8595 /* PickupScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE645A762D75970A007F8595 /* PickupScreen.swift */; };
 		DE645A792D7D0CEB007F8595 /* FoodDataStoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE645A782D7D0CEB007F8595 /* FoodDataStoreManager.swift */; };
 		DE645A7B2D7D0D33007F8595 /* FoodDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE645A7A2D7D0D25007F8595 /* FoodDataSource.swift */; };
 		DE645A7E2D7D52C4007F8595 /* FavoriteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE645A7D2D7D52B0007F8595 /* FavoriteRepository.swift */; };
+		DE645A812D7FC62C007F8595 /* PickupRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE645A802D7FC61F007F8595 /* PickupRepository.swift */; };
 		DEE49CF82D81C33F00CC22A8 /* FoodRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE49CF72D81C33500CC22A8 /* FoodRepository.swift */; };
 		DEE49CFA2D81C4B100CC22A8 /* FoodViewStateProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE49CF92D81C4A600CC22A8 /* FoodViewStateProvider.swift */; };
 		DEE49D1F2D87868E00CC22A8 /* FoodViewObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE49D1E2D87868200CC22A8 /* FoodViewObject.swift */; };
@@ -60,9 +63,12 @@
 		DE645A6B2D6EC039007F8595 /* FoodEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodEntity.swift; sourceTree = "<group>"; };
 		DE645A6F2D6F58EE007F8595 /* FoodPageEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodPageEntity.swift; sourceTree = "<group>"; };
 		DE645A712D6FEC2C007F8595 /* APIClientManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientManager.swift; sourceTree = "<group>"; };
+		DE645A732D759584007F8595 /* PickupEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickupEntity.swift; sourceTree = "<group>"; };
+		DE645A762D75970A007F8595 /* PickupScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickupScreen.swift; sourceTree = "<group>"; };
 		DE645A782D7D0CEB007F8595 /* FoodDataStoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDataStoreManager.swift; sourceTree = "<group>"; };
 		DE645A7A2D7D0D25007F8595 /* FoodDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDataSource.swift; sourceTree = "<group>"; };
 		DE645A7D2D7D52B0007F8595 /* FavoriteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteRepository.swift; sourceTree = "<group>"; };
+		DE645A802D7FC61F007F8595 /* PickupRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickupRepository.swift; sourceTree = "<group>"; };
 		DEE49CF72D81C33500CC22A8 /* FoodRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodRepository.swift; sourceTree = "<group>"; };
 		DEE49CF92D81C4A600CC22A8 /* FoodViewStateProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewStateProvider.swift; sourceTree = "<group>"; };
 		DEE49D1E2D87868200CC22A8 /* FoodViewObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewObject.swift; sourceTree = "<group>"; };
@@ -184,6 +190,7 @@
 			children = (
 				DE645A6F2D6F58EE007F8595 /* FoodPageEntity.swift */,
 				DE645A6B2D6EC039007F8595 /* FoodEntity.swift */,
+				DE645A732D759584007F8595 /* PickupEntity.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -202,6 +209,7 @@
 			children = (
 				DE3BEAA32D8D570B008B49E8 /* Common */,
 				DE645A1A2D6C9E20007F8595 /* Food */,
+				DE645A752D7595FB007F8595 /* Pickup */,
 				DE645A192D6C9E07007F8595 /* Favorite */,
 			);
 			path = Screen;
@@ -241,10 +249,19 @@
 			path = StoredModel;
 			sourceTree = "<group>";
 		};
+		DE645A752D7595FB007F8595 /* Pickup */ = {
+			isa = PBXGroup;
+			children = (
+				DE645A762D75970A007F8595 /* PickupScreen.swift */,
+			);
+			path = Pickup;
+			sourceTree = "<group>";
+		};
 		DE645A7C2D7D2817007F8595 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
 				DEE49CF72D81C33500CC22A8 /* FoodRepository.swift */,
+				DE645A802D7FC61F007F8595 /* PickupRepository.swift */,
 				DE645A7D2D7D52B0007F8595 /* FavoriteRepository.swift */,
 			);
 			path = Repository;
@@ -345,6 +362,7 @@
 				DE645A6C2D6EC044007F8595 /* FoodEntity.swift in Sources */,
 				DEE9049E2D8AF806004B906D /* FavoriteViewStateProvider.swift in Sources */,
 				DE3BEAB52D8D618E008B49E8 /* ExecutingConnectionView.swift in Sources */,
+				DE645A742D759594007F8595 /* PickupEntity.swift in Sources */,
 				DEE49D1F2D87868E00CC22A8 /* FoodViewObject.swift in Sources */,
 				DEE49CF82D81C33F00CC22A8 /* FoodRepository.swift in Sources */,
 				DE3BEAAB2D8D5E77008B49E8 /* RatingViewRepresentable.swift in Sources */,
@@ -353,7 +371,9 @@
 				DEE49D2F2D895C6900CC22A8 /* DateLabelFormatter.swift in Sources */,
 				DE645A722D6FEC2C007F8595 /* APIClientManager.swift in Sources */,
 				DE645A702D6F58FA007F8595 /* FoodPageEntity.swift in Sources */,
+				DE645A772D75970A007F8595 /* PickupScreen.swift in Sources */,
 				DE645A122D6C9D42007F8595 /* UIColorExtension.swift in Sources */,
+				DE645A812D7FC62C007F8595 /* PickupRepository.swift in Sources */,
 				DEE49CFA2D81C4B100CC22A8 /* FoodViewStateProvider.swift in Sources */,
 				DE645A162D6C9D73007F8595 /* ColorExtension.swift in Sources */,
 				DE645A202D6C9E6F007F8595 /* FavoriteScreen.swift in Sources */,
