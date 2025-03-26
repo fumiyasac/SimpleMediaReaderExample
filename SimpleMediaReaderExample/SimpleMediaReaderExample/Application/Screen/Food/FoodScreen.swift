@@ -37,25 +37,23 @@ struct FoodScreen: View {
                     )
                 default:
                     ScrollView {
-                        // 👉 このVStackが無いと下側に8.0pxの余白が生まれてしまう...
-                        VStack(spacing: 0.0) {
-                            LazyVStack {
-                                ForEach(foodViewStateProvider.foodViewObjects, id: \.id) { foodViewObject in
-                                    // お気に入り処理が出来るようにする（SwiftDataと連携したお気に入りの保存）
-                                    FoodRowView(foodViewObject: foodViewObject, tapIsFavoritedButtonAction: { result in
-                                        foodViewStateProvider.addOrDeleteFoodDataStore(foodViewObject: foodViewObject, shouldAdd: result)
-                                    })
-                                    .onAppear {
-                                        if foodViewObject.id == foodViewStateProvider.foodViewObjects.count && foodViewStateProvider.foodViewObjects.count > 0 {
-                                            foodViewStateProvider.fetchNextFoods()
-                                        }
+                        // 👉 spacingを0.0に設定しないと下側に8.0pxの余白が生まれてしまう...
+                        LazyVStack(spacing: 0.0) {
+                            ForEach(foodViewStateProvider.foodViewObjects, id: \.id) { foodViewObject in
+                                // お気に入り処理が出来るようにする（SwiftDataと連携したお気に入りの保存）
+                                FoodRowView(foodViewObject: foodViewObject, tapIsFavoritedButtonAction: { result in
+                                    foodViewStateProvider.addOrDeleteFoodDataStore(foodViewObject: foodViewObject, shouldAdd: result)
+                                })
+                                .onAppear {
+                                    if foodViewObject.id == foodViewStateProvider.foodViewObjects.count && foodViewStateProvider.foodViewObjects.count > 0 {
+                                        foodViewStateProvider.fetchNextFoods()
                                     }
                                 }
                             }
-                            // 👉 LazyVStackにidを付与する事でFavoriteタブで解除したお気に入り状態を反映させる
-                            // ※この方法が正しいかは正直自信がない...
-                            .id(UUID().uuidString)
                         }
+                        // 👉 LazyVStackにidを付与する事でFavoriteタブで解除したお気に入り状態を反映させる
+                        // ※この方法が正しいかは正直自信がない...
+                        .id(UUID().uuidString)
                     }
                     .onAppear {
                         foodViewStateProvider.reloadFoodViewObjects()
