@@ -33,65 +33,55 @@ struct PickupGridView: View {
     // MARK: - Body
 
     var body: some View {
-        GeometryReader { proxy in
-            let gridWidth = CGFloat((proxy.size.width - 24.0) / 2)
-            VStack(alignment: .leading, spacing: 0.0) {
-                ZStack {
-                    LazyImage(url: URL(string: pickupViewObject.thumbnailUrl)) { imageState in
-                        if let image = imageState.image {
-                            image
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: gridWidth, height: gridWidth)
-                                .cornerRadius(8.0)
-                        } else {
-                            Color(uiColor: UIColor(code: "#dddddd"))
-                                .frame(width: gridWidth, height: gridWidth)
-                                .cornerRadius(8.0)
-                        }
+        VStack(alignment: .leading, spacing: 0.0) {
+            ZStack {
+                LazyImage(url: URL(string: pickupViewObject.thumbnailUrl)) { imageState in
+                    if let image = imageState.image {
+                        image
+                            .resizable()
+                            .scaledToFill()
+                            .cornerRadius(8.0)
+                    } else {
+                        Color(uiColor: UIColor(code: "#dddddd"))
+                            .cornerRadius(8.0)
                     }
-                    Rectangle()
-                        .foregroundColor(Color.black.opacity(0.36))
-                        .frame(width: gridWidth, height: gridWidth)
-                    VStack {
-                        Spacer()
-                        HStack {
-                            Text(pickupViewObject.title)
-                                .font(.callout)
-                                .fontWeight(.bold)
-                                .foregroundColor(.white)
-                                .padding(.horizontal, 8.0)
-                                .padding(.bottom, 10.0)
-                                .lineLimit(2)
-                            Spacer()
-                        }
-                    }
-                    .frame(width: gridWidth, height: gridWidth)
                 }
-                // (2) 下部のテキスト表示
+                Rectangle()
+                    .foregroundColor(Color.black.opacity(0.36))
                 VStack {
-                    Text(pickupViewObject.summary)
-                        .font(.callout)
-                        .foregroundColor(.primary)
-                        .padding(.horizontal, 8.0)
-                        .padding(.bottom, 2.0)
-                        .padding(.top, 8.0)
-                        .lineSpacing(2.0)
-                        .lineLimit(4)
+                    Spacer()
+                    HStack {
+                        Text(pickupViewObject.title)
+                            .font(.callout)
+                            .fontWeight(.bold)
+                            .foregroundColor(.white)
+                            .padding(.horizontal, 8.0)
+                            .padding(.bottom, 10.0)
+                            .lineLimit(2)
+                        Spacer()
+                    }
                 }
-                // (3) 上に要素を詰めるためのSpacer
-                Spacer()
             }
-            // MEMO: タップ領域の確保とタップ時の処理
-            .contentShape(Rectangle())
-            .onTapGesture(perform: tapGridViewAction)
-            .cornerRadius(8.0)
-            .frame(width: gridWidth, height: gridWidth + 102.0)
-            .background(
-                RoundedRectangle(cornerRadius: 8.0)
-                    .stroke(Color.secondary.opacity(0.5))
-            )
+            VStack {
+                Text(pickupViewObject.summary)
+                    .font(.callout)
+                    .foregroundColor(.primary)
+                    .padding(.horizontal, 8.0)
+                    .padding(.bottom, 2.0)
+                    .padding(.top, 8.0)
+                    .lineSpacing(2.0)
+                    .lineLimit(4)
+            }
+            Spacer()
         }
+        // MEMO: タップ領域の確保とタップ時の処理
+        .contentShape(Rectangle())
+        .onTapGesture(perform: tapGridViewAction)
+        .cornerRadius(8.0)
+        .background(
+            RoundedRectangle(cornerRadius: 8.0)
+                .stroke(Color.secondary.opacity(0.5))
+        )
     }
 }
 
