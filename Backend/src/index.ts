@@ -22,8 +22,9 @@ server.get('/food', async (request, response) => {
 });
 
 server.get('/pickup', async (_, response) => {
-  const pickup = await prisma.pickup.findMany();
-  response.json(pickup);
+  const pickups = await prisma.pickup.findMany();
+  console.log(pickups);
+  response.json(pickups);
 });
 
 server.listen(3000, () => {
