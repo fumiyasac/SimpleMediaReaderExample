@@ -17,17 +17,21 @@ struct PickupGridView: View {
     // MARK: - Property
 
     private var tapGridViewAction: PickupGridView.TapGridViewAction
-    
+
     private let pickupViewObject: PickupViewObject
+
+    private let namespace: Namespace.ID
 
     // MARK: - Initializer
 
     init(
         pickupViewObject: PickupViewObject,
-        tapGridViewAction: @escaping PickupGridView.TapGridViewAction
+        tapGridViewAction: @escaping PickupGridView.TapGridViewAction,
+        namespace: Namespace.ID
     ) {
         self.pickupViewObject = pickupViewObject
         self.tapGridViewAction = tapGridViewAction
+        self.namespace = namespace
     }
 
     // MARK: - Body
@@ -40,6 +44,7 @@ struct PickupGridView: View {
                         image
                             .resizable()
                             .scaledToFill()
+                            .matchedTransitionSource(id: pickupViewObject.id, in: namespace)
                             .cornerRadius(8.0)
                     } else {
                         Color(uiColor: UIColor(code: "#dddddd"))
@@ -94,6 +99,7 @@ struct PickupGridView: View {
             thumbnailUrl: "https://media-reader-example.s3.ap-northeast-1.amazonaws.com/steak_image_example1.jpg",
             publishedAt: "2025-03-10T00:00:00.000Z"
         ),
-        tapGridViewAction: {}
+        tapGridViewAction: {},
+        namespace: Namespace().wrappedValue
     )
 }

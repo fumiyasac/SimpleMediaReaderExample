@@ -5,6 +5,7 @@
 //  Created by 酒井文也 on 2025/03/03.
 //
 
+import NukeUI
 import SwiftUI
 
 struct PickupScreen: View {
@@ -25,7 +26,13 @@ struct PickupScreen: View {
         GridItem(spacing: 8.0),
         GridItem(spacing: 0.0)
     ]
-    
+
+    // 浮き上がってくる様なAnimationに必要な名前空間
+    @Namespace private var animation
+ 
+    // 現在選択中のViewObjectを格納するための値
+    @State private var selectedPickupViewObject: PickupViewObject?
+
     // MARK: - Body
 
     var body: some View {
@@ -43,22 +50,8 @@ struct PickupScreen: View {
                         }
                     )
                 default:
-                    GeometryReader { proxy in
-                        let gridWidth = CGFloat((proxy.frame(in: .global).size.width - 24.0) / 2)
-                        ScrollView {
-                            // MEMO: 上下に8.0の行間をつけるためにSpacing値を8.0としています。
-                            LazyVGrid(columns: gridColumns, spacing: 8.0) {
-                                ForEach(pickupViewStateProvider.pickupViewObjects) { pickupViewObject in
-                                    PickupGridView(pickupViewObject: pickupViewObject, tapGridViewAction: {
-                                        print("Tapped")
-                                    })
-                                    .frame(width: gridWidth, height: gridWidth + 102.0)
-                                }
-                            }
-                            .padding(8.0)
-                        }
-                        .frame(maxWidth: .infinity)
-                    }
+                    // Grid一覧View要素を表示する
+                    PickupGridListView()
                 }
             }
             .navigationBarTitle("🍒Pickup")
@@ -66,10 +59,31 @@ struct PickupScreen: View {
             .onFirstAppear {
                 pickupViewStateProvider.fetchInitialPickups()
             }
+            // 浮き上がってくる様なAnimationを伴う画面遷移をPresent/Dismissの形で実施する
+            .sheet(item: $selectedPickupViewObject) { pickupViewObject in
+                PickupDetailView(pickupViewObject: pickupViewObject, animation: animation)
+            }
+        }
+    }
+
+    // MARK: - Private Function
+
+    @ViewBuilder
+    private func PickupGridListView() -> some View {
+        GeometryReader { proxy in
+            let gridWidth = CGFloat((proxy.frame(in: .global).size.width - 24.0) / 2)
+            ScrollView {
+                LazyVGrid(columns: gridColumns, spacing: 8.0) {
+                    ForEach(pickupViewStateProvider.pickupViewObjects) { pickupViewObject in
+                        PickupGridView(pickupViewObject: pickupViewObject, tapGridViewAction: {
+                            selectedPickupViewObject = pickupViewObject
+                        }, namespace: animation)
+                        .frame(width: gridWidth, height: gridWidth + 102.0)
+                    }
+                }
+                .padding(8.0)
+            }
+            .frame(maxWidth: .infinity)
         }
     }
 }
-
-//#Preview {
-//    PickupScreen()
-//}
