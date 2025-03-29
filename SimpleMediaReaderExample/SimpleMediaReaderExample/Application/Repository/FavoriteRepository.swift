@@ -25,7 +25,7 @@ final class FavoriteRepository: FavoriteRepositoryProtocol {
     // MARK: - Initializer
 
     @MainActor
-    public init(
+    init(
         foodDataStoreManager: FoodDataStoreManager = FoodDataStoreManager.shared
     ) {
         self.foodDataStoreManager = foodDataStoreManager

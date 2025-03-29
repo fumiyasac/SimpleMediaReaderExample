@@ -28,7 +28,7 @@ final class FoodRepository: FoodRepositoryProtocol {
     // MARK: - Initializer
 
     @MainActor
-    public init(
+    init(
         apiClientManager: APIClientManager = APIClientManager.shared,
         foodDataStoreManager: FoodDataStoreManager = FoodDataStoreManager.shared
     ) {

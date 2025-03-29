@@ -24,6 +24,7 @@ enum HTTPMethod {
 
 protocol APIClientManagerProtocol: Sendable {
     func getFoodPage(_ page: Int) async throws -> FoodPageEntity
+    func getPickup() async throws -> [PickupEntity]
 }
 
 final class APIClientManager {
@@ -182,6 +183,14 @@ extension APIClientManager: APIClientManagerProtocol {
             withParameters: ["page": page],
             httpMethod: .GET,
             responseFormat: FoodPageEntity.self
+        )
+    }
+
+    func getPickup() async throws -> [PickupEntity] {
+        try await executeAPIRequest(
+            endpointUrl: EndPoint.pickup.getBaseUrl(),
+            httpMethod: .GET,
+            responseFormat: [PickupEntity].self
         )
     }
 }
