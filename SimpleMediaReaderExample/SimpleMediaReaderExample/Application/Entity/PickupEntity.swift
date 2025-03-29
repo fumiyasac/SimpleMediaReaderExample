@@ -23,8 +23,8 @@ struct PickupEntity: Hashable, Decodable, Sendable {
         case id
         case title
         case summary
-        case thumbnailUrl = "thumbnail_url"
-        case publishedAt = "published_at"
+        case thumbnailUrl
+        case publishedAt
     }
 
     // MARK: - Initializer
