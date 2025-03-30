@@ -13,9 +13,19 @@ struct PickupDetailView: View {
 
     // MARK: - Property
 
-    var pickupViewObject: PickupViewObject
+    private let pickupViewObject: PickupViewObject
 
-    var animation: Namespace.ID
+    private let animation: Namespace.ID
+
+    // MARK: - Initializer
+
+    init(
+        pickupViewObject: PickupViewObject,
+        animation: Namespace.ID
+    ) {
+        self.pickupViewObject = pickupViewObject
+        self.animation = animation
+    }
 
     // MARK: - Body
 
