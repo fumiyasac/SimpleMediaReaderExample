@@ -4,6 +4,25 @@
 
 ## 1. サンプル概要
 
+### 1-1. 画面の振る舞い
+
+このサンプルアプリは以下のような機能や画面をSwiftUIで実装している例になります。
+
+- **お気に入りの追加・削除機能**
+  - 一覧またはカード状のUIからアイテムを「お気に入り」に登録したり、解除したりするインタラクションを備えています。
+- **インタラクティブな画面遷移**
+  - SwiftUIのアニメーションやドラッグ操作を利用して、特徴的な画面遷移をする動きを実装しています。
+
+### 1-2. 画面キャプチャ
+
+__【お気に入り機能】__
+
+<img src="./images/add_or_remove_favorite1.png" width="320"> <img src="./images/add_or_remove_favorite2.png" width="320">
+
+__【引っ張って閉じる画面遷移機能】__
+
+<img src="./images/interactive_transition1.png" width="320"> <img src="./images/interactive_transition2.png" width="320">
+
 ## 2. Mockサーバー環境構築
 
 ### DB起動手順
