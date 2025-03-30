@@ -69,8 +69,8 @@ struct PickupGridView: View {
             }
             VStack {
                 Text(pickupViewObject.summary)
-                    .font(.callout)
-                    .foregroundColor(.primary)
+                    .font(.footnote)
+                    .foregroundColor(.secondary)
                     .padding(.horizontal, 8.0)
                     .padding(.bottom, 2.0)
                     .padding(.top, 8.0)

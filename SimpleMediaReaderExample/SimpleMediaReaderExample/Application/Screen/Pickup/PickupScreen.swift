@@ -78,7 +78,7 @@ struct PickupScreen: View {
                         PickupGridView(pickupViewObject: pickupViewObject, tapGridViewAction: {
                             selectedPickupViewObject = pickupViewObject
                         }, namespace: animation)
-                        .frame(width: gridWidth, height: gridWidth + 102.0)
+                        .frame(width: gridWidth, height: gridWidth + 84.0)
                     }
                 }
                 .padding(8.0)
