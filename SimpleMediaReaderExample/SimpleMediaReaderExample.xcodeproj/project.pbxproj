@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		DE3BEAA52D8D574A008B49E8 /* ConnectionErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3BEAA42D8D574A008B49E8 /* ConnectionErrorView.swift */; };
-		DE3BEAA92D8D5DBE008B49E8 /* Cosmos in Frameworks */ = {isa = PBXBuildFile; productRef = DE3BEAA82D8D5DBE008B49E8 /* Cosmos */; };
-		DE3BEAAB2D8D5E77008B49E8 /* RatingViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3BEAAA2D8D5E77008B49E8 /* RatingViewRepresentable.swift */; };
-		DE3BEAAD2D8D5EBD008B49E8 /* StarRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3BEAAC2D8D5EBD008B49E8 /* StarRatingView.swift */; };
 		DE3BEAB12D8D5FEA008B49E8 /* LoadingIndicatorViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3BEAB02D8D5FEA008B49E8 /* LoadingIndicatorViewRepresentable.swift */; };
 		DE3BEAB52D8D618E008B49E8 /* ExecutingConnectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3BEAB42D8D618E008B49E8 /* ExecutingConnectionView.swift */; };
 		DE576C952C931FA400249532 /* SimpleMediaReaderExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE576C942C931FA400249532 /* SimpleMediaReaderExampleApp.swift */; };
@@ -49,8 +46,6 @@
 
 /* Begin PBXFileReference section */
 		DE3BEAA42D8D574A008B49E8 /* ConnectionErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionErrorView.swift; sourceTree = "<group>"; };
-		DE3BEAAA2D8D5E77008B49E8 /* RatingViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingViewRepresentable.swift; sourceTree = "<group>"; };
-		DE3BEAAC2D8D5EBD008B49E8 /* StarRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarRatingView.swift; sourceTree = "<group>"; };
 		DE3BEAB02D8D5FEA008B49E8 /* LoadingIndicatorViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicatorViewRepresentable.swift; sourceTree = "<group>"; };
 		DE3BEAB42D8D618E008B49E8 /* ExecutingConnectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecutingConnectionView.swift; sourceTree = "<group>"; };
 		DE576C912C931FA400249532 /* SimpleMediaReaderExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleMediaReaderExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,7 +86,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE3BEAA92D8D5DBE008B49E8 /* Cosmos in Frameworks */,
 				DEE49D272D88220B00CC22A8 /* ScalingHeaderScrollView in Frameworks */,
 				DEE49D2D2D883C9A00CC22A8 /* NukeUI in Frameworks */,
 			);
@@ -105,7 +99,6 @@
 			children = (
 				DE3BEAA62D8D5BDA008B49E8 /* UIViewRepresentable */,
 				DE3BEAA42D8D574A008B49E8 /* ConnectionErrorView.swift */,
-				DE3BEAAC2D8D5EBD008B49E8 /* StarRatingView.swift */,
 				DE3BEAB42D8D618E008B49E8 /* ExecutingConnectionView.swift */,
 			);
 			path = Common;
@@ -114,7 +107,6 @@
 		DE3BEAA62D8D5BDA008B49E8 /* UIViewRepresentable */ = {
 			isa = PBXGroup;
 			children = (
-				DE3BEAAA2D8D5E77008B49E8 /* RatingViewRepresentable.swift */,
 				DE3BEAB02D8D5FEA008B49E8 /* LoadingIndicatorViewRepresentable.swift */,
 			);
 			path = UIViewRepresentable;
@@ -333,7 +325,6 @@
 			packageReferences = (
 				DEE49D252D88220B00CC22A8 /* XCRemoteSwiftPackageReference "ScalingHeaderScrollView" */,
 				DEE49D2B2D883C9500CC22A8 /* XCRemoteSwiftPackageReference "Nuke" */,
-				DE3BEAA72D8D5DBE008B49E8 /* XCRemoteSwiftPackageReference "Cosmos" */,
 			);
 			productRefGroup = DE576C922C931FA400249532 /* Products */;
 			projectDirPath = "";
@@ -378,7 +369,6 @@
 				DE645A742D759594007F8595 /* PickupEntity.swift in Sources */,
 				DEE49D1F2D87868E00CC22A8 /* FoodViewObject.swift in Sources */,
 				DEE49CF82D81C33F00CC22A8 /* FoodRepository.swift in Sources */,
-				DE3BEAAB2D8D5E77008B49E8 /* RatingViewRepresentable.swift in Sources */,
 				DEE49D232D881E7D00CC22A8 /* FoodRowView.swift in Sources */,
 				DE645A7B2D7D0D33007F8595 /* FoodDataSource.swift in Sources */,
 				DEE49D2F2D895C6900CC22A8 /* DateLabelFormatter.swift in Sources */,
@@ -391,7 +381,6 @@
 				DE645A162D6C9D73007F8595 /* ColorExtension.swift in Sources */,
 				DEE067672D97942E0053BDB7 /* PickupGridView.swift in Sources */,
 				DE645A202D6C9E6F007F8595 /* FavoriteScreen.swift in Sources */,
-				DE3BEAAD2D8D5EBD008B49E8 /* StarRatingView.swift in Sources */,
 				DEE0675F2D93E0F90053BDB7 /* PickupViewObject.swift in Sources */,
 				DEE067692D98AFC80053BDB7 /* PickupDetailView.swift in Sources */,
 			);
@@ -452,7 +441,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -509,7 +498,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -603,14 +592,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		DE3BEAA72D8D5DBE008B49E8 /* XCRemoteSwiftPackageReference "Cosmos" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/evgenyneu/Cosmos.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 25.0.1;
-			};
-		};
 		DEE49D252D88220B00CC22A8 /* XCRemoteSwiftPackageReference "ScalingHeaderScrollView" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/exyte/ScalingHeaderScrollView.git";
@@ -630,11 +611,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		DE3BEAA82D8D5DBE008B49E8 /* Cosmos */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DE3BEAA72D8D5DBE008B49E8 /* XCRemoteSwiftPackageReference "Cosmos" */;
-			productName = Cosmos;
-		};
 		DEE49D262D88220B00CC22A8 /* ScalingHeaderScrollView */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = DEE49D252D88220B00CC22A8 /* XCRemoteSwiftPackageReference "ScalingHeaderScrollView" */;
