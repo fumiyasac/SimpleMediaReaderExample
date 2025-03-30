@@ -68,21 +68,6 @@ struct FoodScreen: View {
             .onFirstAppear {
                 foodViewStateProvider.fetchInitialFoods()
             }
-            .navigationBarItems(
-                trailing: Button(
-                    action: {},
-                    label: {
-                        //
-                        NavigationLink(
-                            destination: InquireScreenView(),
-                            label: {
-                                Image(systemName: "envelope.fill")
-                                    .foregroundColor(.white)
-                            }
-                        )
-                    }
-                )
-            )
         }
     }
 }
