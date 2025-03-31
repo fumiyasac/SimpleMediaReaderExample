@@ -31,7 +31,7 @@ __【引っ張って閉じる画面遷移機能】__
 
 ```bash
 # ① Dockerを起動する
-$ docker-compose up -d
+$ docker compose up -d
 
 # ② Dockerコンテナへアクセスをする
 $ docker exec -it [①で表示されたコンテナ名] bash
@@ -50,6 +50,9 @@ $ create database [.envで設定したDB名];
 
 # ⑥ PrismaでSchema更新処理後に作成されたテーブルを確認する
 $ show tables from media_reader_example;
+
+# ⑦ Dockerを停止する
+$ docker compose stop
 ```
 
 ### Prismaのセットアップ手順
