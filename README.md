@@ -86,8 +86,8 @@ $ npx prisma init --datasource-provider mysql
 $ npx prisma migrate dev --name [任意の名前]
 
 # ⑥ GUIでレコードを編集可能なツールを立ち上げる
-# （DockerでMySQLが起動している事が前提）Port番号のデフォルトで5555となります。
-$ npx prisma studio
+# （DockerでMySQLが起動している事が前提）Port番号のデフォルトで5555となります。（ポート番号5555で接続できない場合は、ポート番号を変更してください）
+$ npx prisma studio --port 5556
 ```
 
 ### Mockサーバー起動
